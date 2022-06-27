@@ -4,7 +4,16 @@
   <url>
     <loc>https://jdbewl.github.io/2021/09/23/collect/</loc>
     
-    <lastmod>2022-06-16</lastmod>
+    <lastmod>2022-06-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdbewl.github.io/gallery/index.html</loc>
+    
+    <lastmod>2022-06-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://jdbewl.github.io/2022/01/11/T1/</loc>
+    <loc>https://jdbewl.github.io/2022/01/11/snvj/</loc>
     
     <lastmod>2022-03-16</lastmod>
     
@@ -67,64 +76,64 @@
 
   <url>
     <loc>https://jdbewl.github.io/</loc>
-    <lastmod>2022-06-16</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://jdbewl.github.io/tags/test-text/</loc>
-    <lastmod>2022-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jdbewl.github.io/tags/Mirai/</loc>
-    <lastmod>2022-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jdbewl.github.io/tags/Java-kotlin/</loc>
-    <lastmod>2022-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://jdbewl.github.io/tags/cmd/</loc>
-    <lastmod>2022-06-16</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jdbewl.github.io/tags/powershell/</loc>
-    <lastmod>2022-06-16</lastmod>
+    <lastmod>2022-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdbewl.github.io/tags/Mirai/</loc>
+    <lastmod>2022-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdbewl.github.io/tags/Java-kotlin/</loc>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jdbewl.github.io/tags/collect/</loc>
-    <lastmod>2022-06-16</lastmod>
+    <lastmod>2022-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jdbewl.github.io/tags/test-text/</loc>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jdbewl.github.io/tags/%E5%8F%A4%E4%BB%A3/</loc>
-    <lastmod>2022-06-16</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jdbewl.github.io/tags/%E8%AF%97-%E8%AF%8D%E4%BA%BA/</loc>
-    <lastmod>2022-06-16</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
