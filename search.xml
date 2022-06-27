@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Mirai机器人使用帮助</title>
+    <url>/2021/11/21/bothelp/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p><strong>本教程需要在已经配置好Mirai的机器人的QQ群内使用</strong><br>  <a href="https://github.com/mamoe/mirai">Mirai下载</a><br>  <a href="https://mirai.mamoe.net/">MiraiForum</a><br><strong>本教程仅对部分插件的使用进行总结</strong><br>  <strong>许多优秀的插件都可以在Mirai官方论坛-MiraiForum找到</strong></p>
+</blockquote>
+<h1 id="Mirai机器人使用"><a href="#Mirai机器人使用" class="headerlink" title="Mirai机器人使用"></a>Mirai机器人使用</h1><h2 id="插件列表"><a href="#插件列表" class="headerlink" title="插件列表"></a>插件列表</h2><h3 id="BiliBili-Hepler"><a href="#BiliBili-Hepler" class="headerlink" title="BiliBili Hepler"></a>BiliBili Hepler</h3><blockquote>
+<p>uid为B站账户id<br>  例如 <a href="https://space.bilibili.com/508963009/">https://space.bilibili.com/508963009/</a> 的数字 508963009<br>  contact为QQ号或群号，可省略，会从当前环境自动获取</p>
+</blockquote>
+<blockquote>
+<p>for English code user</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /bili-dynamic add uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /bili-dynamic stop uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /bili-dynamic list [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /bili-live add uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /bili-live stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /bili-live list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /bili-season add sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /bili-season stop sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /bili-season list [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /bili-info aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /bili-info bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /bili-info dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /bili-info live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /bili-search user [keyword]</span><br><span class="line">    搜索用户</span><br><span class="line">    /bili-search bangumi [keyword]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /bili-search ft [keyword]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>对于中文用户</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /B动态 添加 uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /B动态 停止 uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /B动态 列表 [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /B直播 添加 uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /B直播 停止 stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /B直播 列表 list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /B剧集 添加 sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /B剧集 停止 sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /B剧集 列表 [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /B信息 aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /B信息 bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /B信息 dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /B信息 live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /B搜索 用户 [关键词]</span><br><span class="line">    搜索用户</span><br><span class="line">    /B搜索 番剧 [关键词]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /B搜索 影视 [关键词]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
+
+<p>BiliBili Helper由<a href="https://github.com/cssxsh">cssxsh</a>开发<br>具体使用操作由其在MiraiForum和GitHub上的介绍总结<br>这里仅介绍群员的使用方法</p>
+<h3 id="Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）"><a href="#Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）" class="headerlink" title="Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）"></a>Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）</h3><blockquote>
+<p>每天5点：每日句子 + 倒计时（可自定义倒计时事件）<br>  每天21点：每日诗词</p>
+</blockquote>
+<ul>
+<li>用法示例</li>
+</ul>
+<p>唱歌 YY<br>唱歌 YY -random<br>唱歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过语音条发送（不保证质量）</strong><br>点歌 YY<br>点歌 YY -random<br>点歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过小程序发送</strong></p>
+<p>Plum由<a href="https://gitee.com/K85">SakuraWald</a>开发<br>仅做部分总结</p>
+<h3 id="Mirai点歌插件"><a href="#Mirai点歌插件" class="headerlink" title="Mirai点歌插件"></a>Mirai点歌插件</h3><blockquote>
+<p><strong>默认指令列表</strong></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">“#音乐 关键词”</span><br><span class="line">自动搜索所有源以找出来找最佳音频来源</span><br><span class="line"></span><br><span class="line">“#语音 关键词”</span><br><span class="line">自动搜索所有源，以语音信息的形式发出</span><br><span class="line"></span><br><span class="line">“#外链 关键词”</span><br><span class="line">自动搜索所有源，以外链信息的形式发出</span><br><span class="line"></span><br><span class="line">“#QQ 关键词”</span><br><span class="line">搜索QQ音乐</span><br><span class="line"></span><br><span class="line">“#网易 关键词”</span><br><span class="line">搜索网易云音乐</span><br><span class="line"></span><br><span class="line">“#网易电台 关键词”</span><br><span class="line">搜索网易云电台，一般来说是直接选择找到的第一个节目，但是关键词可以以 “电台名称|节目名称”的格式指定电台节目</span><br><span class="line"></span><br><span class="line">“#酷狗 关键词”</span><br><span class="line">搜索酷狗音乐</span><br><span class="line"></span><br><span class="line">“#千千 关键词”</span><br><span class="line">搜索千千音乐（百度音乐）</span><br><span class="line"></span><br><span class="line">“#点歌 来源 外观 关键词”</span><br><span class="line">实验性API</span><br><span class="line">高度自定义的点歌方法</span><br></pre></td></tr></table></figure>
+
+<p>Mirai点歌插件由<a href="https://github.com/khjxiaogu">khjxiaogu</a><br>仅做部分总结</p>
+]]></content>
+      <tags>
+        <tag>Mirai</tag>
+        <tag>Java/kotlin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一个好用的手机投影电脑的软件</title>
     <url>/2021/09/23/onesoftctctp/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -77,46 +117,6 @@
       <tags>
         <tag>cmd</tag>
         <tag>powershell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mirai机器人使用帮助</title>
-    <url>/2021/11/21/bothelp/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p><strong>本教程需要在已经配置好Mirai的机器人的QQ群内使用</strong><br>  <a href="https://github.com/mamoe/mirai">Mirai下载</a><br>  <a href="https://mirai.mamoe.net/">MiraiForum</a><br><strong>本教程仅对部分插件的使用进行总结</strong><br>  <strong>许多优秀的插件都可以在Mirai官方论坛-MiraiForum找到</strong></p>
-</blockquote>
-<h1 id="Mirai机器人使用"><a href="#Mirai机器人使用" class="headerlink" title="Mirai机器人使用"></a>Mirai机器人使用</h1><h2 id="插件列表"><a href="#插件列表" class="headerlink" title="插件列表"></a>插件列表</h2><h3 id="BiliBili-Hepler"><a href="#BiliBili-Hepler" class="headerlink" title="BiliBili Hepler"></a>BiliBili Hepler</h3><blockquote>
-<p>uid为B站账户id<br>  例如 <a href="https://space.bilibili.com/508963009/">https://space.bilibili.com/508963009/</a> 的数字 508963009<br>  contact为QQ号或群号，可省略，会从当前环境自动获取</p>
-</blockquote>
-<blockquote>
-<p>for English code user</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /bili-dynamic add uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /bili-dynamic stop uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /bili-dynamic list [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /bili-live add uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /bili-live stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /bili-live list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /bili-season add sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /bili-season stop sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /bili-season list [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /bili-info aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /bili-info bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /bili-info dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /bili-info live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /bili-search user [keyword]</span><br><span class="line">    搜索用户</span><br><span class="line">    /bili-search bangumi [keyword]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /bili-search ft [keyword]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>对于中文用户</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /B动态 添加 uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /B动态 停止 uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /B动态 列表 [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /B直播 添加 uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /B直播 停止 stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /B直播 列表 list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /B剧集 添加 sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /B剧集 停止 sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /B剧集 列表 [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /B信息 aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /B信息 bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /B信息 dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /B信息 live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /B搜索 用户 [关键词]</span><br><span class="line">    搜索用户</span><br><span class="line">    /B搜索 番剧 [关键词]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /B搜索 影视 [关键词]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
-
-<p>BiliBili Helper由<a href="https://github.com/cssxsh">cssxsh</a>开发<br>具体使用操作由其在MiraiForum和GitHub上的介绍总结<br>这里仅介绍群员的使用方法</p>
-<h3 id="Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）"><a href="#Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）" class="headerlink" title="Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）"></a>Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）</h3><blockquote>
-<p>每天5点：每日句子 + 倒计时（可自定义倒计时事件）<br>  每天21点：每日诗词</p>
-</blockquote>
-<ul>
-<li>用法示例</li>
-</ul>
-<p>唱歌 YY<br>唱歌 YY -random<br>唱歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过语音条发送（不保证质量）</strong><br>点歌 YY<br>点歌 YY -random<br>点歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过小程序发送</strong></p>
-<p>Plum由<a href="https://gitee.com/K85">SakuraWald</a>开发<br>仅做部分总结</p>
-<h3 id="Mirai点歌插件"><a href="#Mirai点歌插件" class="headerlink" title="Mirai点歌插件"></a>Mirai点歌插件</h3><blockquote>
-<p><strong>默认指令列表</strong></p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">“#音乐 关键词”</span><br><span class="line">自动搜索所有源以找出来找最佳音频来源</span><br><span class="line"></span><br><span class="line">“#语音 关键词”</span><br><span class="line">自动搜索所有源，以语音信息的形式发出</span><br><span class="line"></span><br><span class="line">“#外链 关键词”</span><br><span class="line">自动搜索所有源，以外链信息的形式发出</span><br><span class="line"></span><br><span class="line">“#QQ 关键词”</span><br><span class="line">搜索QQ音乐</span><br><span class="line"></span><br><span class="line">“#网易 关键词”</span><br><span class="line">搜索网易云音乐</span><br><span class="line"></span><br><span class="line">“#网易电台 关键词”</span><br><span class="line">搜索网易云电台，一般来说是直接选择找到的第一个节目，但是关键词可以以 “电台名称|节目名称”的格式指定电台节目</span><br><span class="line"></span><br><span class="line">“#酷狗 关键词”</span><br><span class="line">搜索酷狗音乐</span><br><span class="line"></span><br><span class="line">“#千千 关键词”</span><br><span class="line">搜索千千音乐（百度音乐）</span><br><span class="line"></span><br><span class="line">“#点歌 来源 外观 关键词”</span><br><span class="line">实验性API</span><br><span class="line">高度自定义的点歌方法</span><br></pre></td></tr></table></figure>
-
-<p>Mirai点歌插件由<a href="https://github.com/khjxiaogu">khjxiaogu</a><br>仅做部分总结</p>
-]]></content>
-      <tags>
-        <tag>Mirai</tag>
-        <tag>Java/kotlin</tag>
       </tags>
   </entry>
   <entry>
@@ -352,12 +352,51 @@
 </li>
 <li><p>命は綺麗なわけじゃない<br><strong>生命中并不总是充斥着美好</strong><br>美しい人生なんてない<br><strong>美丽人生什么的只是泡沫</strong><br>呼吸が上手く出来ないのは<br><strong>没有办法顺畅地大口呼吸是</strong><br>生きてる証拠だ<br><strong>活着的证明”</strong><br>                          —— 《約束 (VOCALOID ver)》 - 春卷饭p</p>
 </li>
+<li><p>那么首先褴褛 光鲜 选择哪边</p>
+<p>曾经我想都不想给出答案</p>
+<p>在连是非都暧昧了的白夜</p>
+<p>那双戏谑的眼缔成难解心结</p>
+<p>为什么 为什么</p>
+<p>将属于我的赞赏统统打叉</p>
+<p>为什么 为什么</p>
+<p>否定了我的作答</p>
+<p>为何天赐的聪慧让我坠入了这漆黑</p>
+<p>在无端的指责中央义正严辞地面对</p>
+<p>这些是非</p>
+<p>误会</p>
+<p>污秽</p>
+<p>无悔</p>
+<p>直到我相信的</p>
+<p>亲手将 剧本撕毁</p>
+<p>知晓了褴褛 光鲜 都非我所愿</p>
+<p>明褒暗贬有什么意义可言</p>
+<p>在连荣辱都模糊了的狭间</p>
+<p>高墙上四角的湛蓝如此遥远</p>
+<p>为什么 为什么</p>
+<p>公认的庸才偏偏合我口味</p>
+<p>为什么 为什么</p>
+<p>善良却成了软肋</p>
+<p>感谢天赐的蒙昧让我逃离了这漆黑</p>
+<p>得以充耳不闻伪善的谆谆教诲 铁难成钢</p>
+<p>无妨 我本就是这样</p>
+<p>而真实的愿望 只能在 废纸篓埋葬</p>
+<p>明知高人一等的方法 不知矜持如何放下</p>
+<p>“怎样都好”的丧气话 已占据了我全部想法</p>
+<p>明知能够躲藏的位置 不知叛逆心思萌芽</p>
+<p>勾画的未来框架 就在我面前 都坍塌</p>
+<p>原来天赐的贪昧注定我成为这漆黑</p>
+<p>将溅落的瓦砾拾缀拼凑败北的原委</p>
+<p>请你停下</p>
+<p>停下 停下 停下</p>
+<p>别逼迫我回答</p>
+<p>明知一切 都是虚假 都是虚假<br>                          —— 《不知者》 - COP&#x2F;洛天依</p>
+</li>
 </ul>
 <hr>
 <h2 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h2><blockquote>
 <p><strong>由Sugar_DW提供部分内容</strong></p>
 </blockquote>
-<p><strong>《Narcissu》 - 水仙</strong>
+<p><strong>《Narcissu》同人诗集 - 水仙</strong>
 　　</p>
 <ul>
 <li>死亡面前人人都是弱者</li>
@@ -401,7 +440,7 @@
 <p>　　回忆稻田、麦浪、飞蛾，想一生是多么失败，-</p>
 <p>　　一生就是这样在饱尝挫折中积郁成病。-</p>
 <ul>
-<li><p>未来不是被给予的，而是自己争取的。<br>                        —— 《尼尔：机械纪元》</p>
+<li><p>未来不是被给予的，而是自己争取的。<br>                          —— 《尼尔：机械纪元》</p>
 </li>
 <li><p>我想你一定很想知道，你昏迷了多长时间……<br>                          —— 《少女前线》</p>
 </li>
@@ -692,24 +731,54 @@
 </li>
 <li><p>我永远都不会忘记你和我在一起的时光，所以请你答应我,在我即将离开这个世界的时候，你会陪在我身边。</p>
 </li>
+<li><p>你苍白了我的等待，讽刺了我的执着。</p>
+</li>
+<li><p>有些东西，失去了就不能回来。</p>
+</li>
+<li><p>人和人的心最远又最近，真诚便是中间的通道。</p>
+</li>
+<li><p>如果不了解自己是一个会许下什么愿望的人，想要得到什么，想要成为什么样子，了解自己是什么样的人。那么很有可能会迷失在人生的路上。</p>
+</li>
+<li><p>抛弃了尊严而生活到现在有意义吗？</p>
+</li>
+<li><p>学在苦中求，艺在勤中练</p>
+</li>
+<li><p>空谈之类，是谈不久，也谈不出什么来的，它终必被事实的镜子照出原形，拖出尾巴而去。</p>
+</li>
+<li><p>没办法把有趣的东西说成无聊。</p>
+</li>
+<li><p>劳动是知识的源泉，知识是生活的指南。</p>
+</li>
+<li><p>一旦分隔两地就不配叫朋友，只能算是旧识。和自己的人生不再有瓜葛的通过点，记忆中的陈旧标签。明明都知道，却假装没这回事。</p>
+</li>
+<li><p>不知身处何地, 向着梦想的地方前进。 到达梦想的地方, 却又不知身处何地。</p>
+</li>
+<li><p>人类的伟大，莫过于面对恐惧和绝望时的镇定。</p>
+</li>
+<li><p>我虽然讨厌被嘲笑，但是不会停止说这件事。因为比起被嘲笑，我更讨厌说不出口。</p>
+</li>
+<li><p>如果自己都说做不到，而什么都不去做的话，那就更是什么都做不到，什么都不会改变，什么都不会结束。</p>
+</li>
+<li><p>走你正在走的路，不要怕没人与你分享。</p>
+</li>
+<li><p>追逐梦想的人比抓住梦想的人更能发挥实力。</p>
+</li>
+<li><p>干燥的空气，尘埃的味道，我在其中…踏上旅途。</p>
+</li>
+<li><p>离去，让事情变得简单，人们变得善良，像个孩子一样，我们重新开始。</p>
+</li>
+<li><p>本来我们应该把记忆注入这些只有形式的东西里去而获得新生的。</p>
+</li>
+<li><p>人类真矛盾，平时杀牛杀猪脸色都不会变，现在轮到自己了反而那么紧张。</p>
+</li>
+<li><p>别把意气用事和同伴放到天平上去衡量。</p>
+</li>
+<li><p>我的生活就像在白夜里行走。</p>
+</li>
 </ul>
 ]]></content>
       <tags>
         <tag>collect</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《少女☆歌剧 Revue Starlight》观后有想</title>
-    <url>/2022/01/11/snvj/</url>
-    <content><![CDATA[<h1 id="《少女☆歌剧-Revue-Starlight》观后有想"><a href="#《少女☆歌剧-Revue-Starlight》观后有想" class="headerlink" title="《少女☆歌剧 Revue Starlight》观后有想"></a>《少女☆歌剧 Revue Starlight》观后有想</h1><p>一场表演为什么值得众人高评，一出戏剧为什么值得众人传唱，一部电影为什么值得众人赞扬。于这九个少女的故事展开的故事中，寻出这三个问题的答案。</p>
-<p>在解答如上的问题前，我想先分享一句话：“一定是因为过于耀眼才导致我们看不清我们的目的地。”这句话不仅可以作为这九个少女为何无法下定决心的原因来解读，也可以作为当你认为别人太超越你的状况的解释。纵使星光耀眼，以繁星为目标，无所畏惧地前进，终会找到属于自己的舞台，使自己闪耀，同时照亮他人。</p>
-<p>动画中的爱城华恋，为了小时候与神乐光的约定，从5岁开始，放弃了游戏，放弃了休学旅行。这个约定陪伴了她13年，直到她进入圣翔音乐学院，与神乐光的再次相遇，却再次改变了她的一生。Tv版的结尾以最后的revue和第100届的圣翔祭结束，整个故事戛然而止。而在其与BD一同发售的三个OVA中，解释了部分没有在Tv版详细说明的内容，而在从这之后三年，导演古川志宏以剧场版为整个故事画上一个完美的句号。</p>
-<p>Tv版剧情讲了小时候因为害怕而不敢成为“舞台少女”的光，在与华恋的约定下，最终走到了现在。而只有一人能够“Starlight”的revue是不能使这一愿望达成的，而光为了守护这一小小愿望，最终每日重复着做着同样的事情，直到最后，华恋的到来，彻底否定了她这一舞台，也同时彻底否定她这行为。这仅仅只是在Tv版整个故事的主线，而在剧场版里，华恋对自己行为感到迷茫，就像在剧场版开头展示的那颗番茄一样，易破又难以复原。另外这颗番茄串起了整个剧场版的故事，开头番茄的破碎，象征着华恋内心那个“希望与光一起追逐梦想的华恋”已死。再到后面与光的再次相遇，更让她觉得自己什么都没有了，使得她作为“舞台少女”已经没有了任何意义，第二次番茄的破碎，象征着华恋真正意义上的“死”，作为“舞台少女”的她彻底死去。就像Tv版里Banana所想守护的那些舞台少女所有的“闪耀”一样。如果这个少女不能成为舞台少女，那么她就已经真正在观众眼中“死”了。如果不从此改变，光只能是活在芙罗拉闪耀下的克莱尔，华恋永远是被星星的光芒蒙蔽视线的芙罗拉。光最初想要改变，却一直恐惧着，但是在与真昼的revue中，光重新继续做出改变，若无这些改变，华恋将会永远活在过去所造成的的悲剧中。番茄还可代指舞台少女的成熟，剧场版末尾，小华恋递给高中生华恋番茄，代指其成熟。“过去就是未来，未来就是现在”有多种解释，我个人认为是过去的“经验”与“感受”推动自己去创造未来，而我们的未来又是从当下开始的。和家人无忧无虑的相处，玩游戏机时的快乐，与同学讨论休学旅行时的轻松，和光立下的不变约定······最终都因为成为舞台少女而放弃，这份执念最终化作再生产的燃料推动着她涅槃重生。“仅仅5岁，就将命运投入熔炉。——实在是很危险呢。”抉择与改变是整个故事的主旋律。</p>
-<p>随着这个主旋律一直下去，你会发现，除开华恋与光，每个角色都是主角，这部剧中，从未有配角，正如显示生活中的每个人一样，都是自己生活中的主角。在我们欣赏着她们作为舞台少女的闪耀时，如同长颈鹿一样任性而贪婪地渴望着舞台，但revue已然落幕，华恋和光的故事翻开了新的一页，芙罗拉和克莱尔的故事结束，而华恋和光的故事才刚刚开始，她们终将寻到，属于自己的舞台。变得空空如也的华恋放下了过去的执念，可也正是因为一无所有，她才有无限的可能性，什么样的角色都能成为，什么样的角色都可以选择。光把番茄丢给了华恋，从这个角度看，就像我们把番茄丢了过去。完成毕业典礼的不只是屏幕里的华恋和光，屏幕外的我们都是这场毕业典礼的见证者。而需要不断地去寻找下一个舞台、下一个角色的，是舞台少女，也是我们自己。</p>
-<p>整个故事结束了，而我们更应当重新审视自己，成为怎样的人，如何成为那样的人，成为那样的人之后又该做些什么。寻找这些问题的时候，不妨在讲这整个故事再看一遍。这是一部动画，同样是一出歌剧，一段人生。“赋予波涛起伏的心灵以歌声，赋予耀眼夺目的未来以梦想。”寻着自己的光，向前方奔去吧。</p>
-]]></content>
-      <tags>
-        <tag>test text</tag>
       </tags>
   </entry>
   <entry>
@@ -770,6 +839,20 @@
       <tags>
         <tag>古代</tag>
         <tag>诗/词人</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《少女☆歌剧 Revue Starlight》观后有想</title>
+    <url>/2022/01/11/snvj/</url>
+    <content><![CDATA[<h1 id="《少女☆歌剧-Revue-Starlight》观后有想"><a href="#《少女☆歌剧-Revue-Starlight》观后有想" class="headerlink" title="《少女☆歌剧 Revue Starlight》观后有想"></a>《少女☆歌剧 Revue Starlight》观后有想</h1><p>一场表演为什么值得众人高评，一出戏剧为什么值得众人传唱，一部电影为什么值得众人赞扬。于这九个少女的故事展开的故事中，寻出这三个问题的答案。</p>
+<p>在解答如上的问题前，我想先分享一句话：“一定是因为过于耀眼才导致我们看不清我们的目的地。”这句话不仅可以作为这九个少女为何无法下定决心的原因来解读，也可以作为当你认为别人太超越你的状况的解释。纵使星光耀眼，以繁星为目标，无所畏惧地前进，终会找到属于自己的舞台，使自己闪耀，同时照亮他人。</p>
+<p>动画中的爱城华恋，为了小时候与神乐光的约定，从5岁开始，放弃了游戏，放弃了休学旅行。这个约定陪伴了她13年，直到她进入圣翔音乐学院，与神乐光的再次相遇，却再次改变了她的一生。Tv版的结尾以最后的revue和第100届的圣翔祭结束，整个故事戛然而止。而在其与BD一同发售的三个OVA中，解释了部分没有在Tv版详细说明的内容，而在从这之后三年，导演古川志宏以剧场版为整个故事画上一个完美的句号。</p>
+<p>Tv版剧情讲了小时候因为害怕而不敢成为“舞台少女”的光，在与华恋的约定下，最终走到了现在。而只有一人能够“Starlight”的revue是不能使这一愿望达成的，而光为了守护这一小小愿望，最终每日重复着做着同样的事情，直到最后，华恋的到来，彻底否定了她这一舞台，也同时彻底否定她这行为。这仅仅只是在Tv版整个故事的主线，而在剧场版里，华恋对自己行为感到迷茫，就像在剧场版开头展示的那颗番茄一样，易破又难以复原。另外这颗番茄串起了整个剧场版的故事，开头番茄的破碎，象征着华恋内心那个“希望与光一起追逐梦想的华恋”已死。再到后面与光的再次相遇，更让她觉得自己什么都没有了，使得她作为“舞台少女”已经没有了任何意义，第二次番茄的破碎，象征着华恋真正意义上的“死”，作为“舞台少女”的她彻底死去。就像Tv版里Banana所想守护的那些舞台少女所有的“闪耀”一样。如果这个少女不能成为舞台少女，那么她就已经真正在观众眼中“死”了。如果不从此改变，光只能是活在芙罗拉闪耀下的克莱尔，华恋永远是被星星的光芒蒙蔽视线的芙罗拉。光最初想要改变，却一直恐惧着，但是在与真昼的revue中，光重新继续做出改变，若无这些改变，华恋将会永远活在过去所造成的的悲剧中。番茄还可代指舞台少女的成熟，剧场版末尾，小华恋递给高中生华恋番茄，代指其成熟。“过去就是未来，未来就是现在”有多种解释，我个人认为是过去的“经验”与“感受”推动自己去创造未来，而我们的未来又是从当下开始的。和家人无忧无虑的相处，玩游戏机时的快乐，与同学讨论休学旅行时的轻松，和光立下的不变约定······最终都因为成为舞台少女而放弃，这份执念最终化作再生产的燃料推动着她涅槃重生。“仅仅5岁，就将命运投入熔炉。——实在是很危险呢。”抉择与改变是整个故事的主旋律。</p>
+<p>随着这个主旋律一直下去，你会发现，除开华恋与光，每个角色都是主角，这部剧中，从未有配角，正如显示生活中的每个人一样，都是自己生活中的主角。在我们欣赏着她们作为舞台少女的闪耀时，如同长颈鹿一样任性而贪婪地渴望着舞台，但revue已然落幕，华恋和光的故事翻开了新的一页，芙罗拉和克莱尔的故事结束，而华恋和光的故事才刚刚开始，她们终将寻到，属于自己的舞台。变得空空如也的华恋放下了过去的执念，可也正是因为一无所有，她才有无限的可能性，什么样的角色都能成为，什么样的角色都可以选择。光把番茄丢给了华恋，从这个角度看，就像我们把番茄丢了过去。完成毕业典礼的不只是屏幕里的华恋和光，屏幕外的我们都是这场毕业典礼的见证者。而需要不断地去寻找下一个舞台、下一个角色的，是舞台少女，也是我们自己。</p>
+<p>整个故事结束了，而我们更应当重新审视自己，成为怎样的人，如何成为那样的人，成为那样的人之后又该做些什么。寻找这些问题的时候，不妨在讲这整个故事再看一遍。这是一部动画，同样是一出歌剧，一段人生。“赋予波涛起伏的心灵以歌声，赋予耀眼夺目的未来以梦想。”寻着自己的光，向前方奔去吧。</p>
+]]></content>
+      <tags>
+        <tag>test text</tag>
       </tags>
   </entry>
 </search>
