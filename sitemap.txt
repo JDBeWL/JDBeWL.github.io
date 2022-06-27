@@ -12,8 +12,8 @@ https://jdbewl.github.io/
 https://jdbewl.github.io/tags/Mirai/
 https://jdbewl.github.io/tags/Java-kotlin/
 https://jdbewl.github.io/tags/collect/
-https://jdbewl.github.io/tags/%E5%8F%A4%E4%BB%A3/
-https://jdbewl.github.io/tags/%E8%AF%97-%E8%AF%8D%E4%BA%BA/
-https://jdbewl.github.io/tags/test-text/
 https://jdbewl.github.io/tags/cmd/
 https://jdbewl.github.io/tags/powershell/
+https://jdbewl.github.io/tags/test-text/
+https://jdbewl.github.io/tags/%E5%8F%A4%E4%BB%A3/
+https://jdbewl.github.io/tags/%E8%AF%97-%E8%AF%8D%E4%BA%BA/
