@@ -1,7 +1,5 @@
 https://jdbewl.github.io/2021/09/23/collect/
-https://jdbewl.github.io/docs/index.html
 https://jdbewl.github.io/gallery/index.html
-https://jdbewl.github.io/docs/README.html
 https://jdbewl.github.io/about/index.html
 https://jdbewl.github.io/2022/01/11/snvj/
 https://jdbewl.github.io/2022/01/12/sushi/
@@ -9,11 +7,11 @@ https://jdbewl.github.io/2021/11/21/bothelp/
 https://jdbewl.github.io/2021/09/23/onesoftctctp/
 https://jdbewl.github.io/link/index.html
 https://jdbewl.github.io/
-https://jdbewl.github.io/tags/collect/
-https://jdbewl.github.io/tags/test-text/
 https://jdbewl.github.io/tags/cmd/
 https://jdbewl.github.io/tags/powershell/
-https://jdbewl.github.io/tags/Mirai/
-https://jdbewl.github.io/tags/Java-kotlin/
+https://jdbewl.github.io/tags/test-text/
 https://jdbewl.github.io/tags/%E5%8F%A4%E4%BB%A3/
 https://jdbewl.github.io/tags/%E8%AF%97-%E8%AF%8D%E4%BA%BA/
+https://jdbewl.github.io/tags/Mirai/
+https://jdbewl.github.io/tags/Java-kotlin/
+https://jdbewl.github.io/tags/collect/
