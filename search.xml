@@ -1,199 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>一个好用的手机投影电脑的软件</title>
-    <url>/2021/09/23/onesoftctctp/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<h2 id="桌面端环境"><a href="#桌面端环境" class="headerlink" title="桌面端环境"></a>桌面端环境</h2><p>Windows、Linux、MacOS  </p>
-</blockquote>
-<h2 id="使用scrcpy的优点"><a href="#使用scrcpy的优点" class="headerlink" title="使用scrcpy的优点"></a>使用scrcpy的优点</h2><p>   画面（1920×1080或以上）<br>   低延迟（35-70ms）<br>   启动迅速（&lt;1秒显示第一张图像）<br>   非依赖性（设备上未安装任何东西）<br>   设备要求：Android 5.0以上  </p>
-<h1 id="如何使用scrcpy"><a href="#如何使用scrcpy" class="headerlink" title="如何使用scrcpy"></a>如何使用scrcpy</h1><blockquote>
-<p> 手机端开启adb<br> PC端下载scrcpy  </p>
-</blockquote>
-<h2 id="如何打开adb调试"><a href="#如何打开adb调试" class="headerlink" title="如何打开adb调试"></a>如何打开adb调试</h2><p>（若已经打开可以跳过这一步）  </p>
-<p>以MIUI 12.5为例  </p>
-<ul>
-<li><strong>打开开发者模式</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4myFf8r4Re-kRFAxcEGnqa2XGHrHGcWkJRZOyN49QxGZKM1ffZtDChMTCj-7KBZM5EFBjl_Qt2SSSRcf_ahZSxodwHViA3uGWUJkrGX6L-UqH5D5O_tIEymFHFPdMLjv2TG-OSZT-6a1lsBW4yJOs49cTfy980gvxLTn-LNHaqL6BbXthR8b7_ON1ebNln2O_v?width=461&height=1024&cropmode=none" alt="打开开发者模式"></p>
-<hr>
-<ul>
-<li><strong>进入开发者模式</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mjJcXGyOhmguLn9Ojnd-kdUHyESb17zQiSpViWiupyIJz8s_4H3XSinKOKAjvbGYbyDoNq_MQlPDHzpZF2uC5svjmbib0cYZ7wiXRIeb6i_tuh7XiqG7gRedEarBVpgifEgcJVZBXhFfIi0Y1Mz_Gwm2fP4FvMJNnd1rguZfq8m-O_XgApM5or0LMDLq_BwpS?width=461&height=1024&cropmode=none" alt="进入开发者模式"></p>
-<hr>
-<ul>
-<li><strong>打开ADB调试</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mfHmYJswvkqMve0gTxpJX6spJqNVafq4SozGCnfPGX0xaJ7kr37T7aOvTl215MvBra8jp3R92UyXDzTN0iXDhCaVw5uBjlYtGxK0cB1nDz0Vv0e-7syK19z3UfUw63yXbaxPQcn-x7qMD9fjuebCUWdGlXn0l6z4EXUHgwyMKg1UdjxY5fol2sB3mdOeDg7pn?width=461&height=1024&cropmode=none" alt="打开ADB调试"></p>
-<hr>
-<h2 id="连接电脑"><a href="#连接电脑" class="headerlink" title="连接电脑"></a>连接电脑</h2><blockquote>
-<p> <strong>同意ADB调试</strong></p>
-</blockquote>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mMgB1U7kI4l_GY-GrPA-ISyeX9NZpQWEh-Zspp6AuqdoRMkH5Vd7KFsqX8jhIPflS9cct1aMqYlWVWtnJAjuz8KRKNMuPoDQxqo0XDFDtPB_iSe0U0PtBky6zMUvbk5vS3aFmSsJP0o-q-dbJMzNDa8tfYLLBfsGKlywv-fwgZStlqxnDDnmzmSKrKpRo3FHZ?width=1080&height=790&cropmode=none" alt="同意ADB调试"> </p>
-<hr>
-<h3 id="有线连接"><a href="#有线连接" class="headerlink" title="有线连接"></a><strong>有线连接</strong></h3><p>直接运行scrcpy-console.bat即可通过有线方式连接</p>
-<hr>
-<h3 id="无线连接"><a href="#无线连接" class="headerlink" title="无线连接"></a><strong>无线连接</strong></h3><blockquote>
-<p> 可使用powershell和cmd进行命令输入<br> 此处仅展示powershell，命令基本一致（cmd下不输入 .\adb ，直接输入 adb 即可执行命令）  </p>
-</blockquote>
-<hr>
-<p>输入此查看你的设备是否在线</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br></pre></td></tr></table></figure>
-
-<p>如果在线，则应会显示如下图类似的文字<br><img src="https://dsm01pap001files.storage.live.com/y4mvJ8fiNtV3Shi8uR4LVruhCg-JBKjX8Iwr7LmHNVO8UpuJSBVqBJpYLzT7FHeDt5rZSKqv8OMq_O5TCg_mGD3Mpcc1VmDpVzam_s4LO-V1epupolPLJfd1ZoF5vsdqu0SvX5gjRLRDj6JO6kM87EKkWE645JsQpjJEHB9O12MTckyRhq52YYV_EZjOco8scG7?width=586&height=91&cropmode=none" alt="设备在线"></p>
-<hr>
-<p>确认设备在线后输入以下命令获取手机ip地址</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb shell config </span><br></pre></td></tr></table></figure>
-
-<p>应有如下显示<br><img src="https://dsm01pap001files.storage.live.com/y4mE__Y6BQJPgLsANoYuayjl60M5Edi1ep59krBKCoSYFiZ5M7L4kh2rn_6zwMXydeKQrgBdO_phv4jhcVaMxwwLL2w0YqVlNAmuM8DYh9M_EI28DxKH9DxWYma-YxJju4ftuKt1YEklshyxXakrJYp44othfz_I2nxsktExyB44o6vtiOKSXcPfz9ji2wsLS7Y?width=634&height=192&cropmode=none" alt="获取手机端ip地址"></p>
-<hr>
-<p>若有，则键入如下命令</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb tcpip <span class="number">6666</span></span><br></pre></td></tr></table></figure>
-
-<p>6666代表的是你的手机要开放的端口号，可自由更改<br>原生安卓系统可以直接打开无线调试，但我手上的k30i 5G似乎屏蔽了无线调试功能<br>手机需要和电脑处在同一网络中  </p>
-<hr>
-<p>拔掉数据线，在powershell中输入  </p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb connect <span class="number">192.168</span>.<span class="number">1.17</span>:<span class="number">6666</span></span><br></pre></td></tr></table></figure>
-
-<p>出现如下图片即代表已经和手机建立连接<br><img src="https://dsm01pap001files.storage.live.com/y4mcKwGH_MwRJN3Xvnj52NUK4he-UEV0gFz0NSvmPyza5aklPVUbxm0ABMYjUH2bH_u6vdQuLoitm2TtYJVgGPuSitsTrgvqiQWf-K4BqPjXHkgtmHRC5HFnqTevOvs7SOumSbEVmGvfqv4Lhy8sLQQAj-HddKj3zDx9aDE3U4FUq7C4CHviU5yxymuWz5tqNr8?width=635&height=68&cropmode=none" alt="与手机成功建立连接"></p>
-<hr>
-<p>键入如下命令即可与手机端建立无线连接<br>（cmd下可以直接输入scrcpy）  </p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
-
-<p>与手机成功建立连接如图<br><img src="https://dsm01pap001files.storage.live.com/y4mSpjiaEGMQHgbwikDjqnH2r3ABGCVtUbCNjW8vwZbdo2GG1-2GlgpVmoNOjVQco_z6Ob_hpURfbJrdRmv9FXroK3gJld_fErrEFWG9PF4eO1hq89Bu3QWPudQWDxZydHN6h9Wat4c7jD68WQ-vxjW_Qgy1A_RDpoBTb-yq2fnYVNUp4eTakHe8JT6Th7r3HLs?width=950&height=129&cropmode=none" alt="与手机成功建立连接"></p>
-<hr>
-<p>整理命令如下</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br><span class="line">.\adb shell config</span><br><span class="line">.\adb tcpip 端口号</span><br><span class="line">.\adb connect 手机ip地址</span><br><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="补充操作-CMD"><a href="#补充操作-CMD" class="headerlink" title="补充操作 (CMD)"></a>补充操作 (CMD)</h1><blockquote>
-<p> 以下补充转自<a href="https://blog.csdn.net/aa464971/article/details/83349215">https://blog.csdn.net/aa464971/article/details/83349215</a></p>
-</blockquote>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">#帮助</span><br><span class="line">scrcpy --<span class="built_in">help</span></span><br><span class="line"></span><br><span class="line">#设置码率（默认<span class="number">8</span>M）</span><br><span class="line">scrcpy -b <span class="number">8</span>M</span><br><span class="line"></span><br><span class="line">#限制投屏尺寸</span><br><span class="line">scrcpy -m <span class="number">1024</span></span><br><span class="line"></span><br><span class="line">#裁剪投屏屏幕(长:宽:偏移x:偏移y)</span><br><span class="line">scrcpy -c <span class="number">800</span>:<span class="number">800</span>:<span class="number">0</span>:<span class="number">0</span></span><br><span class="line"></span><br><span class="line">#投屏并录屏</span><br><span class="line">scrcpy -r file.mp4</span><br><span class="line"></span><br><span class="line">#不投屏只录屏</span><br><span class="line">scrcpy -Nr file.mp4</span><br><span class="line"></span><br><span class="line">#手指触摸的时候显示轨迹球</span><br><span class="line">scrcpy -t</span><br><span class="line"></span><br><span class="line">#一些快捷键</span><br><span class="line">切换全屏模式 Ctrl+f</span><br><span class="line">将窗口调整为<span class="number">1</span>：<span class="number">1</span>（完美像素） Ctrl+g</span><br><span class="line">调整窗口大小以删除黑色边框 Ctrl+x | 双击黑色背景</span><br><span class="line">设备HOME键 Ctrl+h | 鼠标中键</span><br><span class="line">设备BACK键 Ctrl+b | 鼠标右键</span><br><span class="line">设备任务管理键 Ctrl+s</span><br><span class="line">设备 菜单 键 Ctrl+m</span><br><span class="line">设备音量+键 Ctrl+↑</span><br><span class="line">设备音量-键 Ctrl+↓</span><br><span class="line">设备电源键 Ctrl+p</span><br><span class="line">点亮手机屏幕 鼠标右键</span><br><span class="line">复制内容到设备 Ctrl+v</span><br><span class="line">启用/禁用FPS计数器（stdout） Ctrl+i</span><br><span class="line">安装APK 将apk文件拖入投屏</span><br><span class="line">传输文件到设备 将文件拖入投屏（非apk）</span><br></pre></td></tr></table></figure>
-
-<p>部分内容来自<a href="https://www.jianshu.com/p/3f9116fb39ad">Ashin10</a>   </p>
-<p>scrcpy的github链：<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>  </p>
-]]></content>
-      <tags>
-        <tag>cmd</tag>
-        <tag>powershell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《少女☆歌剧 Revue Starlight》观后有想</title>
-    <url>/2022/01/11/snvj/</url>
-    <content><![CDATA[<h1 id="《少女☆歌剧-Revue-Starlight》观后有想"><a href="#《少女☆歌剧-Revue-Starlight》观后有想" class="headerlink" title="《少女☆歌剧 Revue Starlight》观后有想"></a>《少女☆歌剧 Revue Starlight》观后有想</h1><p>一场表演为什么值得众人高评，一出戏剧为什么值得众人传唱，一部电影为什么值得众人赞扬。于这九个少女的故事展开的故事中，寻出这三个问题的答案。</p>
-<p>在解答如上的问题前，我想先分享一句话：“一定是因为过于耀眼才导致我们看不清我们的目的地。”这句话不仅可以作为这九个少女为何无法下定决心的原因来解读，也可以作为当你认为别人太超越你的状况的解释。纵使星光耀眼，以繁星为目标，无所畏惧地前进，终会找到属于自己的舞台，使自己闪耀，同时照亮他人。</p>
-<p>动画中的爱城华恋，为了小时候与神乐光的约定，从5岁开始，放弃了游戏，放弃了休学旅行。这个约定陪伴了她13年，直到她进入圣翔音乐学院，与神乐光的再次相遇，却再次改变了她的一生。Tv版的结尾以最后的revue和第100届的圣翔祭结束，整个故事戛然而止。而在其与BD一同发售的三个OVA中，解释了部分没有在Tv版详细说明的内容，而在从这之后三年，导演古川志宏以剧场版为整个故事画上一个完美的句号。</p>
-<p>Tv版剧情讲了小时候因为害怕而不敢成为“舞台少女”的光，在与华恋的约定下，最终走到了现在。而只有一人能够“Starlight”的revue是不能使这一愿望达成的，而光为了守护这一小小愿望，最终每日重复着做着同样的事情，直到最后，华恋的到来，彻底否定了她这一舞台，也同时彻底否定她这行为。这仅仅只是在Tv版整个故事的主线，而在剧场版里，华恋对自己行为感到迷茫，就像在剧场版开头展示的那颗番茄一样，易破又难以复原。另外这颗番茄串起了整个剧场版的故事，开头番茄的破碎，象征着华恋内心那个“希望与光一起追逐梦想的华恋”已死。再到后面与光的再次相遇，更让她觉得自己什么都没有了，使得她作为“舞台少女”已经没有了任何意义，第二次番茄的破碎，象征着华恋真正意义上的“死”，作为“舞台少女”的她彻底死去。就像Tv版里Banana所想守护的那些舞台少女所有的“闪耀”一样。如果这个少女不能成为舞台少女，那么她就已经真正在观众眼中“死”了。如果不从此改变，光只能是活在芙罗拉闪耀下的克莱尔，华恋永远是被星星的光芒蒙蔽视线的芙罗拉。光最初想要改变，却一直恐惧着，但是在与真昼的revue中，光重新继续做出改变，若无这些改变，华恋将会永远活在过去所造成的的悲剧中。番茄还可代指舞台少女的成熟，剧场版末尾，小华恋递给高中生华恋番茄，代指其成熟。“过去就是未来，未来就是现在”有多种解释，我个人认为是过去的“经验”与“感受”推动自己去创造未来，而我们的未来又是从当下开始的。和家人无忧无虑的相处，玩游戏机时的快乐，与同学讨论休学旅行时的轻松，和光立下的不变约定······最终都因为成为舞台少女而放弃，这份执念最终化作再生产的燃料推动着她涅槃重生。“仅仅5岁，就将命运投入熔炉。——实在是很危险呢。”抉择与改变是整个故事的主旋律。</p>
-<p>随着这个主旋律一直下去，你会发现，除开华恋与光，每个角色都是主角，这部剧中，从未有配角，正如显示生活中的每个人一样，都是自己生活中的主角。在我们欣赏着她们作为舞台少女的闪耀时，如同长颈鹿一样任性而贪婪地渴望着舞台，但revue已然落幕，华恋和光的故事翻开了新的一页，芙罗拉和克莱尔的故事结束，而华恋和光的故事才刚刚开始，她们终将寻到，属于自己的舞台。变得空空如也的华恋放下了过去的执念，可也正是因为一无所有，她才有无限的可能性，什么样的角色都能成为，什么样的角色都可以选择。光把番茄丢给了华恋，从这个角度看，就像我们把番茄丢了过去。完成毕业典礼的不只是屏幕里的华恋和光，屏幕外的我们都是这场毕业典礼的见证者。而需要不断地去寻找下一个舞台、下一个角色的，是舞台少女，也是我们自己。</p>
-<p>整个故事结束了，而我们更应当重新审视自己，成为怎样的人，如何成为那样的人，成为那样的人之后又该做些什么。寻找这些问题的时候，不妨在讲这整个故事再看一遍。这是一部动画，同样是一出歌剧，一段人生。“赋予波涛起伏的心灵以歌声，赋予耀眼夺目的未来以梦想。”寻着自己的光，向前方奔去吧。</p>
-]]></content>
-      <tags>
-        <tag>test text</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于苏轼</title>
-    <url>/2022/01/12/sushi/</url>
-    <content><![CDATA[<h1 id="历经磨难的艰苦人生"><a href="#历经磨难的艰苦人生" class="headerlink" title="历经磨难的艰苦人生"></a>历经磨难的艰苦人生</h1><blockquote>
-<p>苏轼的一生分为七个时期。<strong>每个人对时期的总结都不一样，如一千个人看同一幅蒙娜丽莎有一千种看法，这里仅为了详细</strong></p>
-</blockquote>
-<h2 id="生在书香世家"><a href="#生在书香世家" class="headerlink" title="生在书香世家"></a>生在书香世家</h2><p>苏轼，字子瞻，自号东坡居士。眉州眉山 (今四川眉山县)人。生于北宋中期，仁宗景佑三年十二月十九日，出生于书香门第，其父苏洵是著名的文学家，他志在科举，但怀才不遇。</p>
-<h2 id="应试及第"><a href="#应试及第" class="headerlink" title="应试及第"></a>应试及第</h2><p>嘉祐元年(1056年),虚岁二十一的苏轼首次出川赴京，参加朝廷的科举考试。翌年，他参加了礼部的考试，以一篇《刑赏忠厚之至论》获得主考官欧阳修的赏识，却因欧阳修误认为是自己的弟子曾巩所作，为了避嫌使其只得第二。</p>
-<p>嘉祐六年(1061年),苏轼应中制科考试,即通常所谓的“三年京察”,入第三等,为“百年第一”,授大理评事、签书凤翔府判官。</p>
-<h2 id="出任凤翔"><a href="#出任凤翔" class="headerlink" title="出任凤翔"></a>出任凤翔</h2><p>嘉佑六年十一月十九日，苏轼出任签书凤翔府判官事，离开父亲和弟弟，苏辙一路送到京都外城郑新门才与兄长道别。</p>
-<p>任职期间，闹过的水灾和旱灾，都得到很好的处理。但疲乏的工作加上官场的你争我斗，苏轼渐渐感到无比的忧戚。</p>
-<p>终于在英宗治平二年(1065)冬，凤翔的任期届满，苏轼迫不及待的奔回父亲及弟弟居住的都城开封。不料第二年他妻子死了，不到一年父亲去世，带着沉重的心情，苏轼乘船运送父亲及妻子的灵柩回故乡眉山。</p>
-<h2 id="王安石变法"><a href="#王安石变法" class="headerlink" title="王安石变法"></a>王安石变法</h2><p>熙宁元年，神宗即位，服父丧期满的苏轼在继室王氏的陪同下离开故乡，第二年出任监官诰院。此时宋神宗为重建面临困境的国家财政，任用王安石为相，推行新法。</p>
-<p>苏轼由于有不同的政治思想，受到排挤。熙宁四年(公元1071年)，年方36岁的苏轼落败，被迫请调杭州 (今浙江省杭州市)，心中不免有些难过及挫败感。</p>
-<p>苏轼在办完公务后，一得空便四处游玩，以解烦忧。结识了许多知交，也作了不少优秀诗歌。如著名的《饮湖上初晴后雨》、《六月二十七日于望湖楼醉书》等。政治上的挫败反而促使东坡体验了更丰富的人生，开拓了一片更宽广的文学领域。</p>
-<p>熙宁七年(1074)，苏轼自愿调任密州 (今山东省诸城县)，因那儿离苏辙任职的济南很近。也在密州作了许多脍炙人口的文学名作如《超然台记》、《水调歌头 - 中秋怀子由》、《江城子 - 密州出猎》。</p>
-<h2 id="乌台诗案"><a href="#乌台诗案" class="headerlink" title="乌台诗案"></a>乌台诗案</h2><p>后来苏轼被调任到徐州 (今江苏省铜山县)、湖州 (今浙江省吴兴县)。神宗元丰二年(公元1079年)时，在他移任湖州的第三个月的一天，一位朝廷钦差，为了要讨好王安石，把苏轼捉拿进京，指称他诽谤朝廷，请皇上下令司法官员判他的罪。不久苏轼就被送入狱中，这就是著名的“乌台诗案”。  </p>
-<p>案子轰动一时，除湖、杭州等地的百姓请和尚念经为他祈福，许多赏识他的官员都舍身挽救，加上神宗原本就喜爱他的文学，生病的曹太后为他说情，最后只定 “讥讽政事”之罪。后受皇帝恩赐，判他流放黄州，免于一死。  </p>
-<h2 id="流放黄州"><a href="#流放黄州" class="headerlink" title="流放黄州"></a>流放黄州</h2><p>元丰三年(公元1080年)，苏轼被贬为黄州团练副使，初到黄州，衣食住行都成问题。后来自力更生，开荒种地。在平淡地生活中找到喜悦，并坚定要艰险、乐观地在人生坎坷的道路上前进。</p>
-<p>一年后，苏轼在东坡旁筑了一间书斋，命名其为「东坡雪堂」，从此自号“东坡居士”。文章无论在思想还是在题材上都有了扩展。如《前赤壁赋》， 《念奴娇 - 赤壁怀古》、《后赤壁赋》等，此时的苏轼在文学艺术的造诣上已达极高的境界 。</p>
-<p>元丰七年，神宗下令苏轼离开黄州，改授汝州 (今河南省汝南县) 团练副使。旅途中曾遇王安石，二人虽有不同政治简介，却谈得非常投机，王安石对他评价极高。</p>
-<p>苏轼被贬黄州的时候，有著名的《猪肉颂》打油诗:<strong>“黄州好猪肉，价钱等粪土。富者不肯吃，贫者不解煮。慢著火，少著水，火候足时它自美。每日起来打一碗，饱得自家君莫管。”</strong></p>
-<p>这里的“慢著火，少著水，火候足时它自美”，就是著名的东坡肉烹调法了。苏东坡后来任杭州太守深受百姓爱戴。而这“东坡肉”也跟着沾光，名噪杭州，成了当地的一道名菜了。  </p>
-<h2 id="元祐更化"><a href="#元祐更化" class="headerlink" title="元祐更化"></a>元祐更化</h2><p>元丰七年，苏轼恢复名誉，被起用为登州 (今山东省蓬莱县)知事，不到十天，受朝廷之召出任礼部郎中。12月调回京都开封，任起居舍人。  </p>
-<p>元丰八年(公元1085年)三月，神宗崩逝，10岁的哲宗登基，太皇太后掌权，逐次废除新法。新法派被排斥。昔日重臣重新掌政。史家称为元佑更化。</p>
-<p><strong>元佑元年(1086)，苏轼晋升为中书舍人、翰林学士、知制诰，同时兼任侍读。但此时的苏轼已对做官没有兴趣了。对王安石及新法的认识使他对新法有保留意见，保守派的人便说他是王安石的新法派了；新法派又不把他当作自己人，所以东坡便变成夹缝里的人物。</strong></p>
-<p>元佑四年，苏轼摆脱派阀之争，请调转任杭州知事。苏轼在知事任内修筑了<strong>西湖苏堤</strong>。<br>元佑六年又奉召出任翰林学士承旨，并兼任侍读，但遭排斥，不到几个月又被调任颖洲(今安徽省阜阳市)知事。离开朝廷，次年转任扬州(江苏省阳州市)知事。</p>
-<p><strong>元佑七年(公元1092年)九月，苏轼又被召回朝廷，出任兵部尚书，十一月晋升为礼部尚书，此即苏轼从政的最高职位。</strong></p>
-<h1 id="命运的转折点"><a href="#命运的转折点" class="headerlink" title="命运的转折点"></a>命运的转折点</h1><p>巴蜀大川以母亲的胸怀哺育了一个苏轼，乐观豁达造就了一代天才，使他独具让所有的人们快乐的魅力。在给朋友的信中，他曾这样坦露心迹：“我一生之乐在执笔为文之时，心中错综复杂之情思，我笔皆可畅达之。我自谓人生之乐，未有过于此者也。”这种快乐深深地感染了同时代人，使得朝野内外、本国异邦、或友或敌、或亲或疏，唱苏词如沐春风，读苏文如饮琼浆。旨为正义奔波呼号的苏轼，远不如弟弟子由过得轻松。沉默寡言的子由勤于生儿育女，三子七女绕膝，虽有天伦之乐，但也穷苦至极。子由高大身材，住的房子低矮，苏轼常以为此取笑弟弟，还曾写过两句：“常时低头诵经史，忽然欠身屋打头。”苦恼人却可以坦诚地笑、轻松地乐。两个同样遭贬的兄弟曾在一个穷县相遇，两人在一个小饭馆里吃午饭。粗糙的麦面饼使子由难以入口，苏轼几口吃光，以苦为乐地笑着对弟弟说：“这种美味，你还要细嚼烂咽吗？”苏轼讥讽苏小妹的额头大，信囗闪出两句趣话：“未出庭门三两步，额头先到画堂前。”这种极具智慧的诙谐，一直流传至今。</p>
-<p>苏轼遭受小人诬陷，就是所谓诬蔑皇帝的“乌台诗案”，被贬湖北黄州，做了地方武装副部长，靠着微廉的俸禄，无法养活家人，便在黄州城外的东坡上开荒种地，自号“东坡居士”。自此人们称其苏东坡。他在《初到黄州》一诗中写道 “长江绕郭知鱼美，好竹连山觉笋香”，这哪里能看出谪贬的悲哀，分明是一副赏美景、尝美食的好心情。当时黄州的猪肉非常便宜，苏东坡买来猪肉，用慢火清炖，然后加入酱油等调料，做出的肉美味无比，为此他还专门写了《猪肉颂》：“净洗铛，少着水，柴头罨烟焰不起。待他自熟莫催他，火候足时他自美。黄州好猪肉，价贱如泥土。富者不肯吃，贫者不解煮。早晨起来打两碗，饱得自家君莫管。”黄州城东大约十亩田地，成为苏轼的躬耕之处。三间房子在坡顶上，向下看可见茅亭，亭下就是有名的雪堂。前有小桥，小沟常干，一株柳树，水井一口，中有冷泉，低处就是可耕之田，桑林菜圃，果园满枝，茶树低矮，可得香茗。黄州盛产柑桔，苏东坡竟然还尝试着用蜜桔酿酒，当然酒的质量是不过关的，朋友们饮过后纷纷腹泻，成为一时的笑谈。</p>
-<p>苏东坡不善饮酒，说自己“吾少时望见酒杯而醉”，在黄州似乎因为有了更为洒脱的心境，他却酒量大增，他说“而今亦能饮三蕉叶矣。他反对泥醉，而主张“半酣”：“我饮不尽器,半酣味尤长””偶得酒中趣，空杯亦常持”。苏轼有次在黄州夜市喝酒，碰到一身刺青的壮汉，将他打倒在地，并很愤怒地训示：“什么东西，你敢碰我。你不知道我在这混得怎样吗？”那位壮汉不知道他是谁。此时倒在地上的苏轼，却没有反应，反而笑了起来。过去他是才子，也是朝廷大员，人人都认识他。可现在呢，他很平静。也许他在想：为什么一定要让别人知道他呢？回到家后，在给马孟德的信中写到：“自喜渐不为人知。”</p>
-<p>身处东坡之上，心入农人，脚踏大地，离天更近，苏轼与民同忧，与民同乐，久旱甘霖，手舞足蹈。劳而有获，不胜欣喜。“某现在东坡种稻，劳苦之中亦自有其乐。有屋五间，果菜十数畦，桑百余本。身耕妻蚕，聊以卒岁也。”吉苦不能代替乐，乐可以忘却苦。乐中无苦，是人生极致；苦中作乐，是人生的无奈。身居高官显位，享尽无上荣耀的苏轼，在一篇短文中论乐与苦,<strong>“乐事可慕，苦事可畏，皆是未至时心尔。及苦乐既至，以身履之，求畏慕者初不可得，况既过之后复有何物？比之寻声捕影系风迩梦尔。”</strong></p>
-<p>在“<strong>食无肉、病无药、居无室、出无友、冬无炭、夏无寒泉</strong>”的海南岛，苏轼精神不屈不挠、人生达观明豁的他庆幸<strong>此地无瘴，心忧如昨，乐又复至</strong>。在那里挨饿是常有的事，他在杂记中写到“食阳光止饥饿的办法，这恐怕难于易知易行。” 苏轼时常头上顶着一个西瓜，在田中边走边唱。一个七十多岁的老太太对他说：”翰林学士，你过去在朝中当大官，现在想来，是不是像一场春梦？“苏东坡闻此对于人生沉浮茅塞顿开，从此以后称她“<strong>春梦婆</strong>”。曾经尽享世间之贵、人间之美、民间之爱的苏轼，贬到海角天涯，当地无医无药，他写信给朋友则说：“每念京师无数人丧生于医师之手，予颇为庆幸。”</p>
-<p>苦不能代替乐，乐可以忘却苦。乐中无苦，是人生极致；苦中作乐，是人生的无奈。苏轼最后一次遇赦启程北上，心情之好，盛况空前，山水悦目，风光无限。在广州的宴席上，一个朋友向他开玩笑说：“我当时真以为你死了。”苏东坡说：“不错，我死了，并且还到了阴曹地府。在阴间路上遇上了章子厚，决心又还了阳。”苏东坡，一位罕见的文学巨匠，一位胸怀坦荡的官员，一位倜傥潇洒的才子，一位乐观向上的凡人，历史见证了他的睿智，他的的故事已经流行了千年，历久弥新、经久不衰，与此一切相伴的还有他的机敏而又劲锐的诙谐豁达。</p>
-<h2 id="扩展资料"><a href="#扩展资料" class="headerlink" title="扩展资料"></a>扩展资料</h2><p>苏轼长于散文创作，、<strong>《前赤壁赋》</strong>、<strong>《后赤壁赋》</strong>等名篇佳作脍炙人口，体现了中国文人的忧患意识和人文精神。他的诗，把现实主义精神和浪漫主义风格巧妙结合起来，多姿多彩，美轮美奂，代表了宋诗最高水平。</p>
-<p>他的词，清新豪健，题材广阔，挥洒自如，气势磅礴，开创了豪放词风。他的书法、绘画，也都达到了很高水平。除此之外，在哲学、茶道、烹饪、养生、园林艺术方面，他都有独到的造诣。</p>
-<p>近代国学大师王国维将屈原、陶渊明、杜甫、苏轼列为中国文学史上最伟大的诗人，并且将他们的思想、人品、学问、才华、待人接物、立身行事，看成浑然一个整体，是有一定道理的。</p>
-<p>更足称道者，作为一个封建时代的文人，苏轼身上，既无头巾气，无山林隐逸气，亦无以富贵骄人气，无忠臣孝子气，无大作家架子气；既无大臣杜门思过之态，亦无谪宦战战兢兢之态。他与你我同在，同悲同喜，丝毫也不刻板，浑是率然纯真的真性情，真品格。</p>
-<h1 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h1><p><strong>《苏轼 与侄孙元老》（其二）</strong></p>
-<p><strong>【原文】</strong><br>侄孙元老秀才，久不闻问①，不识即日体中佳否？蜀中骨肉，想不住得安讯。老人住海外如昨，但近来多病瘦瘁，不复如往日，不知余年复得相见否？循、惠不得书久矣②。旅况牢落③，不言可知。又海南连岁不熟，饮食百物艰难，及泉、广海舶绝不至④，药物鲊酱等皆无，厄穷至此，委命而已。老人与过子相对，如两苦行僧尔。然胸中亦超然自得，不改其度，知之，免忧。所要志文，但数年不死便作，不食言也。侄孙既是东坡骨肉，人所觑看⑤。住京，凡百加关防，切祝切祝！今有一书与许下诸子⑥，又恐陈浩秀才不过许，只令付与侄孙，切速为求便寄达。余惟万万自重。不一一。</p>
-<p><strong>【注释】</strong><br>①闻问：通音讯。<br>②循、惠：循指循州，治所在今广东惠阳东。时苏辙贬居循州，苏轼的家属留在惠州。<br>③牢落：孤寂零落。<br>④泉、广：泉指泉州（今福建泉州），广指广州（今广东广州），均为当时的海上贸易城市。<br>⑤觑看：细看、关注。<br>⑥许下诸子：当时苏轼兄弟两家分住惠州、筠州、许州和常州四处。许下指许州，治所在今河南许昌。</p>
-<p><strong>【译文】</strong><br>侄孙元老秀才，很久没有通音讯了，不知最近身体可好？四川的家人，都得不到他们安好的消息。我住在海南岛，情况一如往昔，只是近来生病，瘦了一些，不如往日那样健壮了，不知道这剩下的岁月还能不能与你再见面。循州和惠州也很久没通音讯了。贬谪在外的凄凉孤寂，我不说你也明白。加上海南岛连年荒灾，吃饭生活等事很是艰难，泉州和广州的商船很久没来了，因此连药品、咸菜、鱼酱等物都缺乏了，穷困到这种地步，只有听天由命了。我和儿子苏过相伴过日，好像两个苦行僧。不过心中依然超脱自得，没有改变心意，你知道了这些，可以不必替我们担忧。你以前向我要求的墓表，只要我不死，一定会写，不会食言的。因为你是我的侄孙，必然会受到人们的关注，你又住在京城，行事一定要小心防范，切记！切记！我还有一封书信给许州的家属，但是担心送信的陈浩秀才不路过许州，便只请他送信给你，请你再速速替我转寄吧。剩下的话不多说了，你一定要多保重呀。</p>
-<p><strong>【评析】</strong><br>苏元老，字在廷，是苏轼的侄孙。这是苏轼在儋州写给他的一封书札，是一封娓娓动听的家书。</p>
-<blockquote>
-<p><strong>本文引用如下文章</strong></p>
-</blockquote>
-<ul>
-<li><p><a href="http://www.360doc.com/content/16/0723/14/4958641_577787006.shtml">达观的苏轼</a></p>
-</li>
-<li><p><a href="http://ewenyan.com/articles/sc/tsbdj/112.html">苏轼 与侄孙元老-唐宋八大家文选赏析-原文,译文,注释-【易文言】-古文,文言文在线翻译网</a></p>
-</li>
-<li><p><a href="https://zhidao.baidu.com/question/1800521623232442187.html">苏轼的一生分为哪几个时期</a></p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>古代</tag>
-        <tag>诗/词人</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mirai机器人使用帮助</title>
-    <url>/2021/11/21/bothelp/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p><strong>本教程需要在已经配置好Mirai的机器人的QQ群内使用</strong><br>  <a href="https://github.com/mamoe/mirai">Mirai下载</a><br>  <a href="https://mirai.mamoe.net/">MiraiForum</a><br><strong>本教程仅对部分插件的使用进行总结</strong><br>  <strong>许多优秀的插件都可以在Mirai官方论坛-MiraiForum找到</strong></p>
-</blockquote>
-<h1 id="Mirai机器人使用"><a href="#Mirai机器人使用" class="headerlink" title="Mirai机器人使用"></a>Mirai机器人使用</h1><h2 id="插件列表"><a href="#插件列表" class="headerlink" title="插件列表"></a>插件列表</h2><h3 id="BiliBili-Hepler"><a href="#BiliBili-Hepler" class="headerlink" title="BiliBili Hepler"></a>BiliBili Hepler</h3><blockquote>
-<p>uid为B站账户id<br>  例如 <a href="https://space.bilibili.com/508963009/">https://space.bilibili.com/508963009/</a> 的数字 508963009<br>  contact为QQ号或群号，可省略，会从当前环境自动获取</p>
-</blockquote>
-<blockquote>
-<p>for English code user</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /bili-dynamic add uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /bili-dynamic stop uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /bili-dynamic list [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /bili-live add uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /bili-live stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /bili-live list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /bili-season add sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /bili-season stop sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /bili-season list [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /bili-info aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /bili-info bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /bili-info dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /bili-info live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /bili-search user [keyword]</span><br><span class="line">    搜索用户</span><br><span class="line">    /bili-search bangumi [keyword]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /bili-search ft [keyword]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>对于中文用户</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /B动态 添加 uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /B动态 停止 uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /B动态 列表 [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /B直播 添加 uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /B直播 停止 stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /B直播 列表 list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /B剧集 添加 sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /B剧集 停止 sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /B剧集 列表 [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /B信息 aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /B信息 bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /B信息 dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /B信息 live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /B搜索 用户 [关键词]</span><br><span class="line">    搜索用户</span><br><span class="line">    /B搜索 番剧 [关键词]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /B搜索 影视 [关键词]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
-
-<p>BiliBili Helper由<a href="https://github.com/cssxsh">cssxsh</a>开发<br>具体使用操作由其在MiraiForum和GitHub上的介绍总结<br>这里仅介绍群员的使用方法</p>
-<h3 id="Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）"><a href="#Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）" class="headerlink" title="Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）"></a>Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）</h3><blockquote>
-<p>每天5点：每日句子 + 倒计时（可自定义倒计时事件）<br>  每天21点：每日诗词</p>
-</blockquote>
-<ul>
-<li>用法示例</li>
-</ul>
-<p>唱歌 YY<br>唱歌 YY -random<br>唱歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过语音条发送（不保证质量）</strong><br>点歌 YY<br>点歌 YY -random<br>点歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过小程序发送</strong></p>
-<p>Plum由<a href="https://gitee.com/K85">SakuraWald</a>开发<br>仅做部分总结</p>
-<h3 id="Mirai点歌插件"><a href="#Mirai点歌插件" class="headerlink" title="Mirai点歌插件"></a>Mirai点歌插件</h3><blockquote>
-<p><strong>默认指令列表</strong></p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">“#音乐 关键词”</span><br><span class="line">自动搜索所有源以找出来找最佳音频来源</span><br><span class="line"></span><br><span class="line">“#语音 关键词”</span><br><span class="line">自动搜索所有源，以语音信息的形式发出</span><br><span class="line"></span><br><span class="line">“#外链 关键词”</span><br><span class="line">自动搜索所有源，以外链信息的形式发出</span><br><span class="line"></span><br><span class="line">“#QQ 关键词”</span><br><span class="line">搜索QQ音乐</span><br><span class="line"></span><br><span class="line">“#网易 关键词”</span><br><span class="line">搜索网易云音乐</span><br><span class="line"></span><br><span class="line">“#网易电台 关键词”</span><br><span class="line">搜索网易云电台，一般来说是直接选择找到的第一个节目，但是关键词可以以 “电台名称|节目名称”的格式指定电台节目</span><br><span class="line"></span><br><span class="line">“#酷狗 关键词”</span><br><span class="line">搜索酷狗音乐</span><br><span class="line"></span><br><span class="line">“#千千 关键词”</span><br><span class="line">搜索千千音乐（百度音乐）</span><br><span class="line"></span><br><span class="line">“#点歌 来源 外观 关键词”</span><br><span class="line">实验性API</span><br><span class="line">高度自定义的点歌方法</span><br></pre></td></tr></table></figure>
-
-<p>Mirai点歌插件由<a href="https://github.com/khjxiaogu">khjxiaogu</a><br>仅做部分总结</p>
-]]></content>
-      <tags>
-        <tag>Mirai</tag>
-        <tag>Java/kotlin</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Collection</title>
     <url>/2021/09/23/collect/</url>
     <content><![CDATA[<h1 id="收集"><a href="#收集" class="headerlink" title="收集"></a>收集</h1><h2 id="名言"><a href="#名言" class="headerlink" title="名言"></a>名言</h2><ul>
@@ -393,8 +200,6 @@
 </ul>
 <hr>
 <h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2><ul>
-<li><p>Where there’s a will, there’s a way.<br><strong>有志者，事竟成</strong></p>
-</li>
 <li><p>Never tell yourself<br><strong>绝不要告诉自己</strong><br>You should be someone else<br><strong>你应该成为别人</strong><br>Stand up tall and say<br><strong>挺直腰杆 大声说</strong><br>I’m not afraid I’m not afraid<br><strong>我无所畏惧</strong><br>                        —— 《We Are》（我们就是我们） - ONE OK ROCK</p>
 </li>
 <li><p>我也知道有些事无法改变，我们执迷不悟，不断循环往复<br>但我仍旧祝你一帆风顺，直面未来，一路向前，一路平安<br>                        —— 《Bon Voyage》（一路顺风） - ONE OK ROCK</p>
@@ -856,6 +661,199 @@
 ]]></content>
       <tags>
         <tag>collect</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mirai机器人使用帮助</title>
+    <url>/2021/11/21/bothelp/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p><strong>本教程需要在已经配置好Mirai的机器人的QQ群内使用</strong><br>  <a href="https://github.com/mamoe/mirai">Mirai下载</a><br>  <a href="https://mirai.mamoe.net/">MiraiForum</a><br><strong>本教程仅对部分插件的使用进行总结</strong><br>  <strong>许多优秀的插件都可以在Mirai官方论坛-MiraiForum找到</strong></p>
+</blockquote>
+<h1 id="Mirai机器人使用"><a href="#Mirai机器人使用" class="headerlink" title="Mirai机器人使用"></a>Mirai机器人使用</h1><h2 id="插件列表"><a href="#插件列表" class="headerlink" title="插件列表"></a>插件列表</h2><h3 id="BiliBili-Hepler"><a href="#BiliBili-Hepler" class="headerlink" title="BiliBili Hepler"></a>BiliBili Hepler</h3><blockquote>
+<p>uid为B站账户id<br>  例如 <a href="https://space.bilibili.com/508963009/">https://space.bilibili.com/508963009/</a> 的数字 508963009<br>  contact为QQ号或群号，可省略，会从当前环境自动获取</p>
+</blockquote>
+<blockquote>
+<p>for English code user</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /bili-dynamic add uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /bili-dynamic stop uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /bili-dynamic list [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /bili-live add uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /bili-live stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /bili-live list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /bili-season add sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /bili-season stop sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /bili-season list [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /bili-info aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /bili-info bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /bili-info dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /bili-info live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /bili-search user [keyword]</span><br><span class="line">    搜索用户</span><br><span class="line">    /bili-search bangumi [keyword]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /bili-search ft [keyword]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>对于中文用户</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /B动态 添加 uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /B动态 停止 uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /B动态 列表 [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /B直播 添加 uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /B直播 停止 stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /B直播 列表 list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /B剧集 添加 sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /B剧集 停止 sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /B剧集 列表 [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /B信息 aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /B信息 bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /B信息 dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /B信息 live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /B搜索 用户 [关键词]</span><br><span class="line">    搜索用户</span><br><span class="line">    /B搜索 番剧 [关键词]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /B搜索 影视 [关键词]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
+
+<p>BiliBili Helper由<a href="https://github.com/cssxsh">cssxsh</a>开发<br>具体使用操作由其在MiraiForum和GitHub上的介绍总结<br>这里仅介绍群员的使用方法</p>
+<h3 id="Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）"><a href="#Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）" class="headerlink" title="Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）"></a>Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）</h3><blockquote>
+<p>每天5点：每日句子 + 倒计时（可自定义倒计时事件）<br>  每天21点：每日诗词</p>
+</blockquote>
+<ul>
+<li>用法示例</li>
+</ul>
+<p>唱歌 YY<br>唱歌 YY -random<br>唱歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过语音条发送（不保证质量）</strong><br>点歌 YY<br>点歌 YY -random<br>点歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过小程序发送</strong></p>
+<p>Plum由<a href="https://gitee.com/K85">SakuraWald</a>开发<br>仅做部分总结</p>
+<h3 id="Mirai点歌插件"><a href="#Mirai点歌插件" class="headerlink" title="Mirai点歌插件"></a>Mirai点歌插件</h3><blockquote>
+<p><strong>默认指令列表</strong></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">“#音乐 关键词”</span><br><span class="line">自动搜索所有源以找出来找最佳音频来源</span><br><span class="line"></span><br><span class="line">“#语音 关键词”</span><br><span class="line">自动搜索所有源，以语音信息的形式发出</span><br><span class="line"></span><br><span class="line">“#外链 关键词”</span><br><span class="line">自动搜索所有源，以外链信息的形式发出</span><br><span class="line"></span><br><span class="line">“#QQ 关键词”</span><br><span class="line">搜索QQ音乐</span><br><span class="line"></span><br><span class="line">“#网易 关键词”</span><br><span class="line">搜索网易云音乐</span><br><span class="line"></span><br><span class="line">“#网易电台 关键词”</span><br><span class="line">搜索网易云电台，一般来说是直接选择找到的第一个节目，但是关键词可以以 “电台名称|节目名称”的格式指定电台节目</span><br><span class="line"></span><br><span class="line">“#酷狗 关键词”</span><br><span class="line">搜索酷狗音乐</span><br><span class="line"></span><br><span class="line">“#千千 关键词”</span><br><span class="line">搜索千千音乐（百度音乐）</span><br><span class="line"></span><br><span class="line">“#点歌 来源 外观 关键词”</span><br><span class="line">实验性API</span><br><span class="line">高度自定义的点歌方法</span><br></pre></td></tr></table></figure>
+
+<p>Mirai点歌插件由<a href="https://github.com/khjxiaogu">khjxiaogu</a><br>仅做部分总结</p>
+]]></content>
+      <tags>
+        <tag>Mirai</tag>
+        <tag>Java/kotlin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一个好用的手机投影电脑的软件</title>
+    <url>/2021/09/23/onesoftctctp/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<h2 id="桌面端环境"><a href="#桌面端环境" class="headerlink" title="桌面端环境"></a>桌面端环境</h2><p>Windows、Linux、MacOS  </p>
+</blockquote>
+<h2 id="使用scrcpy的优点"><a href="#使用scrcpy的优点" class="headerlink" title="使用scrcpy的优点"></a>使用scrcpy的优点</h2><p>   画面（1920×1080或以上）<br>   低延迟（35-70ms）<br>   启动迅速（&lt;1秒显示第一张图像）<br>   非依赖性（设备上未安装任何东西）<br>   设备要求：Android 5.0以上  </p>
+<h1 id="如何使用scrcpy"><a href="#如何使用scrcpy" class="headerlink" title="如何使用scrcpy"></a>如何使用scrcpy</h1><blockquote>
+<p> 手机端开启adb<br> PC端下载scrcpy  </p>
+</blockquote>
+<h2 id="如何打开adb调试"><a href="#如何打开adb调试" class="headerlink" title="如何打开adb调试"></a>如何打开adb调试</h2><p>（若已经打开可以跳过这一步）  </p>
+<p>以MIUI 12.5为例  </p>
+<ul>
+<li><strong>打开开发者模式</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4myFf8r4Re-kRFAxcEGnqa2XGHrHGcWkJRZOyN49QxGZKM1ffZtDChMTCj-7KBZM5EFBjl_Qt2SSSRcf_ahZSxodwHViA3uGWUJkrGX6L-UqH5D5O_tIEymFHFPdMLjv2TG-OSZT-6a1lsBW4yJOs49cTfy980gvxLTn-LNHaqL6BbXthR8b7_ON1ebNln2O_v?width=461&height=1024&cropmode=none" alt="打开开发者模式"></p>
+<hr>
+<ul>
+<li><strong>进入开发者模式</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mjJcXGyOhmguLn9Ojnd-kdUHyESb17zQiSpViWiupyIJz8s_4H3XSinKOKAjvbGYbyDoNq_MQlPDHzpZF2uC5svjmbib0cYZ7wiXRIeb6i_tuh7XiqG7gRedEarBVpgifEgcJVZBXhFfIi0Y1Mz_Gwm2fP4FvMJNnd1rguZfq8m-O_XgApM5or0LMDLq_BwpS?width=461&height=1024&cropmode=none" alt="进入开发者模式"></p>
+<hr>
+<ul>
+<li><strong>打开ADB调试</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mfHmYJswvkqMve0gTxpJX6spJqNVafq4SozGCnfPGX0xaJ7kr37T7aOvTl215MvBra8jp3R92UyXDzTN0iXDhCaVw5uBjlYtGxK0cB1nDz0Vv0e-7syK19z3UfUw63yXbaxPQcn-x7qMD9fjuebCUWdGlXn0l6z4EXUHgwyMKg1UdjxY5fol2sB3mdOeDg7pn?width=461&height=1024&cropmode=none" alt="打开ADB调试"></p>
+<hr>
+<h2 id="连接电脑"><a href="#连接电脑" class="headerlink" title="连接电脑"></a>连接电脑</h2><blockquote>
+<p> <strong>同意ADB调试</strong></p>
+</blockquote>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mMgB1U7kI4l_GY-GrPA-ISyeX9NZpQWEh-Zspp6AuqdoRMkH5Vd7KFsqX8jhIPflS9cct1aMqYlWVWtnJAjuz8KRKNMuPoDQxqo0XDFDtPB_iSe0U0PtBky6zMUvbk5vS3aFmSsJP0o-q-dbJMzNDa8tfYLLBfsGKlywv-fwgZStlqxnDDnmzmSKrKpRo3FHZ?width=1080&height=790&cropmode=none" alt="同意ADB调试"> </p>
+<hr>
+<h3 id="有线连接"><a href="#有线连接" class="headerlink" title="有线连接"></a><strong>有线连接</strong></h3><p>直接运行scrcpy-console.bat即可通过有线方式连接</p>
+<hr>
+<h3 id="无线连接"><a href="#无线连接" class="headerlink" title="无线连接"></a><strong>无线连接</strong></h3><blockquote>
+<p> 可使用powershell和cmd进行命令输入<br> 此处仅展示powershell，命令基本一致（cmd下不输入 .\adb ，直接输入 adb 即可执行命令）  </p>
+</blockquote>
+<hr>
+<p>输入此查看你的设备是否在线</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br></pre></td></tr></table></figure>
+
+<p>如果在线，则应会显示如下图类似的文字<br><img src="https://dsm01pap001files.storage.live.com/y4mvJ8fiNtV3Shi8uR4LVruhCg-JBKjX8Iwr7LmHNVO8UpuJSBVqBJpYLzT7FHeDt5rZSKqv8OMq_O5TCg_mGD3Mpcc1VmDpVzam_s4LO-V1epupolPLJfd1ZoF5vsdqu0SvX5gjRLRDj6JO6kM87EKkWE645JsQpjJEHB9O12MTckyRhq52YYV_EZjOco8scG7?width=586&height=91&cropmode=none" alt="设备在线"></p>
+<hr>
+<p>确认设备在线后输入以下命令获取手机ip地址</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb shell config </span><br></pre></td></tr></table></figure>
+
+<p>应有如下显示<br><img src="https://dsm01pap001files.storage.live.com/y4mE__Y6BQJPgLsANoYuayjl60M5Edi1ep59krBKCoSYFiZ5M7L4kh2rn_6zwMXydeKQrgBdO_phv4jhcVaMxwwLL2w0YqVlNAmuM8DYh9M_EI28DxKH9DxWYma-YxJju4ftuKt1YEklshyxXakrJYp44othfz_I2nxsktExyB44o6vtiOKSXcPfz9ji2wsLS7Y?width=634&height=192&cropmode=none" alt="获取手机端ip地址"></p>
+<hr>
+<p>若有，则键入如下命令</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb tcpip <span class="number">6666</span></span><br></pre></td></tr></table></figure>
+
+<p>6666代表的是你的手机要开放的端口号，可自由更改<br>原生安卓系统可以直接打开无线调试，但我手上的k30i 5G似乎屏蔽了无线调试功能<br>手机需要和电脑处在同一网络中  </p>
+<hr>
+<p>拔掉数据线，在powershell中输入  </p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb connect <span class="number">192.168</span>.<span class="number">1.17</span>:<span class="number">6666</span></span><br></pre></td></tr></table></figure>
+
+<p>出现如下图片即代表已经和手机建立连接<br><img src="https://dsm01pap001files.storage.live.com/y4mcKwGH_MwRJN3Xvnj52NUK4he-UEV0gFz0NSvmPyza5aklPVUbxm0ABMYjUH2bH_u6vdQuLoitm2TtYJVgGPuSitsTrgvqiQWf-K4BqPjXHkgtmHRC5HFnqTevOvs7SOumSbEVmGvfqv4Lhy8sLQQAj-HddKj3zDx9aDE3U4FUq7C4CHviU5yxymuWz5tqNr8?width=635&height=68&cropmode=none" alt="与手机成功建立连接"></p>
+<hr>
+<p>键入如下命令即可与手机端建立无线连接<br>（cmd下可以直接输入scrcpy）  </p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
+
+<p>与手机成功建立连接如图<br><img src="https://dsm01pap001files.storage.live.com/y4mSpjiaEGMQHgbwikDjqnH2r3ABGCVtUbCNjW8vwZbdo2GG1-2GlgpVmoNOjVQco_z6Ob_hpURfbJrdRmv9FXroK3gJld_fErrEFWG9PF4eO1hq89Bu3QWPudQWDxZydHN6h9Wat4c7jD68WQ-vxjW_Qgy1A_RDpoBTb-yq2fnYVNUp4eTakHe8JT6Th7r3HLs?width=950&height=129&cropmode=none" alt="与手机成功建立连接"></p>
+<hr>
+<p>整理命令如下</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br><span class="line">.\adb shell config</span><br><span class="line">.\adb tcpip 端口号</span><br><span class="line">.\adb connect 手机ip地址</span><br><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="补充操作-CMD"><a href="#补充操作-CMD" class="headerlink" title="补充操作 (CMD)"></a>补充操作 (CMD)</h1><blockquote>
+<p> 以下补充转自<a href="https://blog.csdn.net/aa464971/article/details/83349215">https://blog.csdn.net/aa464971/article/details/83349215</a></p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">#帮助</span><br><span class="line">scrcpy --<span class="built_in">help</span></span><br><span class="line"></span><br><span class="line">#设置码率（默认<span class="number">8</span>M）</span><br><span class="line">scrcpy -b <span class="number">8</span>M</span><br><span class="line"></span><br><span class="line">#限制投屏尺寸</span><br><span class="line">scrcpy -m <span class="number">1024</span></span><br><span class="line"></span><br><span class="line">#裁剪投屏屏幕(长:宽:偏移x:偏移y)</span><br><span class="line">scrcpy -c <span class="number">800</span>:<span class="number">800</span>:<span class="number">0</span>:<span class="number">0</span></span><br><span class="line"></span><br><span class="line">#投屏并录屏</span><br><span class="line">scrcpy -r file.mp4</span><br><span class="line"></span><br><span class="line">#不投屏只录屏</span><br><span class="line">scrcpy -Nr file.mp4</span><br><span class="line"></span><br><span class="line">#手指触摸的时候显示轨迹球</span><br><span class="line">scrcpy -t</span><br><span class="line"></span><br><span class="line">#一些快捷键</span><br><span class="line">切换全屏模式 Ctrl+f</span><br><span class="line">将窗口调整为<span class="number">1</span>：<span class="number">1</span>（完美像素） Ctrl+g</span><br><span class="line">调整窗口大小以删除黑色边框 Ctrl+x | 双击黑色背景</span><br><span class="line">设备HOME键 Ctrl+h | 鼠标中键</span><br><span class="line">设备BACK键 Ctrl+b | 鼠标右键</span><br><span class="line">设备任务管理键 Ctrl+s</span><br><span class="line">设备 菜单 键 Ctrl+m</span><br><span class="line">设备音量+键 Ctrl+↑</span><br><span class="line">设备音量-键 Ctrl+↓</span><br><span class="line">设备电源键 Ctrl+p</span><br><span class="line">点亮手机屏幕 鼠标右键</span><br><span class="line">复制内容到设备 Ctrl+v</span><br><span class="line">启用/禁用FPS计数器（stdout） Ctrl+i</span><br><span class="line">安装APK 将apk文件拖入投屏</span><br><span class="line">传输文件到设备 将文件拖入投屏（非apk）</span><br></pre></td></tr></table></figure>
+
+<p>部分内容来自<a href="https://www.jianshu.com/p/3f9116fb39ad">Ashin10</a>   </p>
+<p>scrcpy的github链：<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>  </p>
+]]></content>
+      <tags>
+        <tag>cmd</tag>
+        <tag>powershell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《少女☆歌剧 Revue Starlight》观后有想</title>
+    <url>/2022/01/11/snvj/</url>
+    <content><![CDATA[<h1 id="《少女☆歌剧-Revue-Starlight》观后有想"><a href="#《少女☆歌剧-Revue-Starlight》观后有想" class="headerlink" title="《少女☆歌剧 Revue Starlight》观后有想"></a>《少女☆歌剧 Revue Starlight》观后有想</h1><p>一场表演为什么值得众人高评，一出戏剧为什么值得众人传唱，一部电影为什么值得众人赞扬。于这九个少女的故事展开的故事中，寻出这三个问题的答案。</p>
+<p>在解答如上的问题前，我想先分享一句话：“一定是因为过于耀眼才导致我们看不清我们的目的地。”这句话不仅可以作为这九个少女为何无法下定决心的原因来解读，也可以作为当你认为别人太超越你的状况的解释。纵使星光耀眼，以繁星为目标，无所畏惧地前进，终会找到属于自己的舞台，使自己闪耀，同时照亮他人。</p>
+<p>动画中的爱城华恋，为了小时候与神乐光的约定，从5岁开始，放弃了游戏，放弃了休学旅行。这个约定陪伴了她13年，直到她进入圣翔音乐学院，与神乐光的再次相遇，却再次改变了她的一生。Tv版的结尾以最后的revue和第100届的圣翔祭结束，整个故事戛然而止。而在其与BD一同发售的三个OVA中，解释了部分没有在Tv版详细说明的内容，而在从这之后三年，导演古川志宏以剧场版为整个故事画上一个完美的句号。</p>
+<p>Tv版剧情讲了小时候因为害怕而不敢成为“舞台少女”的光，在与华恋的约定下，最终走到了现在。而只有一人能够“Starlight”的revue是不能使这一愿望达成的，而光为了守护这一小小愿望，最终每日重复着做着同样的事情，直到最后，华恋的到来，彻底否定了她这一舞台，也同时彻底否定她这行为。这仅仅只是在Tv版整个故事的主线，而在剧场版里，华恋对自己行为感到迷茫，就像在剧场版开头展示的那颗番茄一样，易破又难以复原。另外这颗番茄串起了整个剧场版的故事，开头番茄的破碎，象征着华恋内心那个“希望与光一起追逐梦想的华恋”已死。再到后面与光的再次相遇，更让她觉得自己什么都没有了，使得她作为“舞台少女”已经没有了任何意义，第二次番茄的破碎，象征着华恋真正意义上的“死”，作为“舞台少女”的她彻底死去。就像Tv版里Banana所想守护的那些舞台少女所有的“闪耀”一样。如果这个少女不能成为舞台少女，那么她就已经真正在观众眼中“死”了。如果不从此改变，光只能是活在芙罗拉闪耀下的克莱尔，华恋永远是被星星的光芒蒙蔽视线的芙罗拉。光最初想要改变，却一直恐惧着，但是在与真昼的revue中，光重新继续做出改变，若无这些改变，华恋将会永远活在过去所造成的的悲剧中。番茄还可代指舞台少女的成熟，剧场版末尾，小华恋递给高中生华恋番茄，代指其成熟。“过去就是未来，未来就是现在”有多种解释，我个人认为是过去的“经验”与“感受”推动自己去创造未来，而我们的未来又是从当下开始的。和家人无忧无虑的相处，玩游戏机时的快乐，与同学讨论休学旅行时的轻松，和光立下的不变约定······最终都因为成为舞台少女而放弃，这份执念最终化作再生产的燃料推动着她涅槃重生。“仅仅5岁，就将命运投入熔炉。——实在是很危险呢。”抉择与改变是整个故事的主旋律。</p>
+<p>随着这个主旋律一直下去，你会发现，除开华恋与光，每个角色都是主角，这部剧中，从未有配角，正如显示生活中的每个人一样，都是自己生活中的主角。在我们欣赏着她们作为舞台少女的闪耀时，如同长颈鹿一样任性而贪婪地渴望着舞台，但revue已然落幕，华恋和光的故事翻开了新的一页，芙罗拉和克莱尔的故事结束，而华恋和光的故事才刚刚开始，她们终将寻到，属于自己的舞台。变得空空如也的华恋放下了过去的执念，可也正是因为一无所有，她才有无限的可能性，什么样的角色都能成为，什么样的角色都可以选择。光把番茄丢给了华恋，从这个角度看，就像我们把番茄丢了过去。完成毕业典礼的不只是屏幕里的华恋和光，屏幕外的我们都是这场毕业典礼的见证者。而需要不断地去寻找下一个舞台、下一个角色的，是舞台少女，也是我们自己。</p>
+<p>整个故事结束了，而我们更应当重新审视自己，成为怎样的人，如何成为那样的人，成为那样的人之后又该做些什么。寻找这些问题的时候，不妨在讲这整个故事再看一遍。这是一部动画，同样是一出歌剧，一段人生。“赋予波涛起伏的心灵以歌声，赋予耀眼夺目的未来以梦想。”寻着自己的光，向前方奔去吧。</p>
+]]></content>
+      <tags>
+        <tag>test text</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于苏轼</title>
+    <url>/2022/01/12/sushi/</url>
+    <content><![CDATA[<h1 id="历经磨难的艰苦人生"><a href="#历经磨难的艰苦人生" class="headerlink" title="历经磨难的艰苦人生"></a>历经磨难的艰苦人生</h1><blockquote>
+<p>苏轼的一生分为七个时期。<strong>每个人对时期的总结都不一样，如一千个人看同一幅蒙娜丽莎有一千种看法，这里仅为了详细</strong></p>
+</blockquote>
+<h2 id="生在书香世家"><a href="#生在书香世家" class="headerlink" title="生在书香世家"></a>生在书香世家</h2><p>苏轼，字子瞻，自号东坡居士。眉州眉山 (今四川眉山县)人。生于北宋中期，仁宗景佑三年十二月十九日，出生于书香门第，其父苏洵是著名的文学家，他志在科举，但怀才不遇。</p>
+<h2 id="应试及第"><a href="#应试及第" class="headerlink" title="应试及第"></a>应试及第</h2><p>嘉祐元年(1056年),虚岁二十一的苏轼首次出川赴京，参加朝廷的科举考试。翌年，他参加了礼部的考试，以一篇《刑赏忠厚之至论》获得主考官欧阳修的赏识，却因欧阳修误认为是自己的弟子曾巩所作，为了避嫌使其只得第二。</p>
+<p>嘉祐六年(1061年),苏轼应中制科考试,即通常所谓的“三年京察”,入第三等,为“百年第一”,授大理评事、签书凤翔府判官。</p>
+<h2 id="出任凤翔"><a href="#出任凤翔" class="headerlink" title="出任凤翔"></a>出任凤翔</h2><p>嘉佑六年十一月十九日，苏轼出任签书凤翔府判官事，离开父亲和弟弟，苏辙一路送到京都外城郑新门才与兄长道别。</p>
+<p>任职期间，闹过的水灾和旱灾，都得到很好的处理。但疲乏的工作加上官场的你争我斗，苏轼渐渐感到无比的忧戚。</p>
+<p>终于在英宗治平二年(1065)冬，凤翔的任期届满，苏轼迫不及待的奔回父亲及弟弟居住的都城开封。不料第二年他妻子死了，不到一年父亲去世，带着沉重的心情，苏轼乘船运送父亲及妻子的灵柩回故乡眉山。</p>
+<h2 id="王安石变法"><a href="#王安石变法" class="headerlink" title="王安石变法"></a>王安石变法</h2><p>熙宁元年，神宗即位，服父丧期满的苏轼在继室王氏的陪同下离开故乡，第二年出任监官诰院。此时宋神宗为重建面临困境的国家财政，任用王安石为相，推行新法。</p>
+<p>苏轼由于有不同的政治思想，受到排挤。熙宁四年(公元1071年)，年方36岁的苏轼落败，被迫请调杭州 (今浙江省杭州市)，心中不免有些难过及挫败感。</p>
+<p>苏轼在办完公务后，一得空便四处游玩，以解烦忧。结识了许多知交，也作了不少优秀诗歌。如著名的《饮湖上初晴后雨》、《六月二十七日于望湖楼醉书》等。政治上的挫败反而促使东坡体验了更丰富的人生，开拓了一片更宽广的文学领域。</p>
+<p>熙宁七年(1074)，苏轼自愿调任密州 (今山东省诸城县)，因那儿离苏辙任职的济南很近。也在密州作了许多脍炙人口的文学名作如《超然台记》、《水调歌头 - 中秋怀子由》、《江城子 - 密州出猎》。</p>
+<h2 id="乌台诗案"><a href="#乌台诗案" class="headerlink" title="乌台诗案"></a>乌台诗案</h2><p>后来苏轼被调任到徐州 (今江苏省铜山县)、湖州 (今浙江省吴兴县)。神宗元丰二年(公元1079年)时，在他移任湖州的第三个月的一天，一位朝廷钦差，为了要讨好王安石，把苏轼捉拿进京，指称他诽谤朝廷，请皇上下令司法官员判他的罪。不久苏轼就被送入狱中，这就是著名的“乌台诗案”。  </p>
+<p>案子轰动一时，除湖、杭州等地的百姓请和尚念经为他祈福，许多赏识他的官员都舍身挽救，加上神宗原本就喜爱他的文学，生病的曹太后为他说情，最后只定 “讥讽政事”之罪。后受皇帝恩赐，判他流放黄州，免于一死。  </p>
+<h2 id="流放黄州"><a href="#流放黄州" class="headerlink" title="流放黄州"></a>流放黄州</h2><p>元丰三年(公元1080年)，苏轼被贬为黄州团练副使，初到黄州，衣食住行都成问题。后来自力更生，开荒种地。在平淡地生活中找到喜悦，并坚定要艰险、乐观地在人生坎坷的道路上前进。</p>
+<p>一年后，苏轼在东坡旁筑了一间书斋，命名其为「东坡雪堂」，从此自号“东坡居士”。文章无论在思想还是在题材上都有了扩展。如《前赤壁赋》， 《念奴娇 - 赤壁怀古》、《后赤壁赋》等，此时的苏轼在文学艺术的造诣上已达极高的境界 。</p>
+<p>元丰七年，神宗下令苏轼离开黄州，改授汝州 (今河南省汝南县) 团练副使。旅途中曾遇王安石，二人虽有不同政治简介，却谈得非常投机，王安石对他评价极高。</p>
+<p>苏轼被贬黄州的时候，有著名的《猪肉颂》打油诗:<strong>“黄州好猪肉，价钱等粪土。富者不肯吃，贫者不解煮。慢著火，少著水，火候足时它自美。每日起来打一碗，饱得自家君莫管。”</strong></p>
+<p>这里的“慢著火，少著水，火候足时它自美”，就是著名的东坡肉烹调法了。苏东坡后来任杭州太守深受百姓爱戴。而这“东坡肉”也跟着沾光，名噪杭州，成了当地的一道名菜了。  </p>
+<h2 id="元祐更化"><a href="#元祐更化" class="headerlink" title="元祐更化"></a>元祐更化</h2><p>元丰七年，苏轼恢复名誉，被起用为登州 (今山东省蓬莱县)知事，不到十天，受朝廷之召出任礼部郎中。12月调回京都开封，任起居舍人。  </p>
+<p>元丰八年(公元1085年)三月，神宗崩逝，10岁的哲宗登基，太皇太后掌权，逐次废除新法。新法派被排斥。昔日重臣重新掌政。史家称为元佑更化。</p>
+<p><strong>元佑元年(1086)，苏轼晋升为中书舍人、翰林学士、知制诰，同时兼任侍读。但此时的苏轼已对做官没有兴趣了。对王安石及新法的认识使他对新法有保留意见，保守派的人便说他是王安石的新法派了；新法派又不把他当作自己人，所以东坡便变成夹缝里的人物。</strong></p>
+<p>元佑四年，苏轼摆脱派阀之争，请调转任杭州知事。苏轼在知事任内修筑了<strong>西湖苏堤</strong>。<br>元佑六年又奉召出任翰林学士承旨，并兼任侍读，但遭排斥，不到几个月又被调任颖洲(今安徽省阜阳市)知事。离开朝廷，次年转任扬州(江苏省阳州市)知事。</p>
+<p><strong>元佑七年(公元1092年)九月，苏轼又被召回朝廷，出任兵部尚书，十一月晋升为礼部尚书，此即苏轼从政的最高职位。</strong></p>
+<h1 id="命运的转折点"><a href="#命运的转折点" class="headerlink" title="命运的转折点"></a>命运的转折点</h1><p>巴蜀大川以母亲的胸怀哺育了一个苏轼，乐观豁达造就了一代天才，使他独具让所有的人们快乐的魅力。在给朋友的信中，他曾这样坦露心迹：“我一生之乐在执笔为文之时，心中错综复杂之情思，我笔皆可畅达之。我自谓人生之乐，未有过于此者也。”这种快乐深深地感染了同时代人，使得朝野内外、本国异邦、或友或敌、或亲或疏，唱苏词如沐春风，读苏文如饮琼浆。旨为正义奔波呼号的苏轼，远不如弟弟子由过得轻松。沉默寡言的子由勤于生儿育女，三子七女绕膝，虽有天伦之乐，但也穷苦至极。子由高大身材，住的房子低矮，苏轼常以为此取笑弟弟，还曾写过两句：“常时低头诵经史，忽然欠身屋打头。”苦恼人却可以坦诚地笑、轻松地乐。两个同样遭贬的兄弟曾在一个穷县相遇，两人在一个小饭馆里吃午饭。粗糙的麦面饼使子由难以入口，苏轼几口吃光，以苦为乐地笑着对弟弟说：“这种美味，你还要细嚼烂咽吗？”苏轼讥讽苏小妹的额头大，信囗闪出两句趣话：“未出庭门三两步，额头先到画堂前。”这种极具智慧的诙谐，一直流传至今。</p>
+<p>苏轼遭受小人诬陷，就是所谓诬蔑皇帝的“乌台诗案”，被贬湖北黄州，做了地方武装副部长，靠着微廉的俸禄，无法养活家人，便在黄州城外的东坡上开荒种地，自号“东坡居士”。自此人们称其苏东坡。他在《初到黄州》一诗中写道 “长江绕郭知鱼美，好竹连山觉笋香”，这哪里能看出谪贬的悲哀，分明是一副赏美景、尝美食的好心情。当时黄州的猪肉非常便宜，苏东坡买来猪肉，用慢火清炖，然后加入酱油等调料，做出的肉美味无比，为此他还专门写了《猪肉颂》：“净洗铛，少着水，柴头罨烟焰不起。待他自熟莫催他，火候足时他自美。黄州好猪肉，价贱如泥土。富者不肯吃，贫者不解煮。早晨起来打两碗，饱得自家君莫管。”黄州城东大约十亩田地，成为苏轼的躬耕之处。三间房子在坡顶上，向下看可见茅亭，亭下就是有名的雪堂。前有小桥，小沟常干，一株柳树，水井一口，中有冷泉，低处就是可耕之田，桑林菜圃，果园满枝，茶树低矮，可得香茗。黄州盛产柑桔，苏东坡竟然还尝试着用蜜桔酿酒，当然酒的质量是不过关的，朋友们饮过后纷纷腹泻，成为一时的笑谈。</p>
+<p>苏东坡不善饮酒，说自己“吾少时望见酒杯而醉”，在黄州似乎因为有了更为洒脱的心境，他却酒量大增，他说“而今亦能饮三蕉叶矣。他反对泥醉，而主张“半酣”：“我饮不尽器,半酣味尤长””偶得酒中趣，空杯亦常持”。苏轼有次在黄州夜市喝酒，碰到一身刺青的壮汉，将他打倒在地，并很愤怒地训示：“什么东西，你敢碰我。你不知道我在这混得怎样吗？”那位壮汉不知道他是谁。此时倒在地上的苏轼，却没有反应，反而笑了起来。过去他是才子，也是朝廷大员，人人都认识他。可现在呢，他很平静。也许他在想：为什么一定要让别人知道他呢？回到家后，在给马孟德的信中写到：“自喜渐不为人知。”</p>
+<p>身处东坡之上，心入农人，脚踏大地，离天更近，苏轼与民同忧，与民同乐，久旱甘霖，手舞足蹈。劳而有获，不胜欣喜。“某现在东坡种稻，劳苦之中亦自有其乐。有屋五间，果菜十数畦，桑百余本。身耕妻蚕，聊以卒岁也。”吉苦不能代替乐，乐可以忘却苦。乐中无苦，是人生极致；苦中作乐，是人生的无奈。身居高官显位，享尽无上荣耀的苏轼，在一篇短文中论乐与苦,<strong>“乐事可慕，苦事可畏，皆是未至时心尔。及苦乐既至，以身履之，求畏慕者初不可得，况既过之后复有何物？比之寻声捕影系风迩梦尔。”</strong></p>
+<p>在“<strong>食无肉、病无药、居无室、出无友、冬无炭、夏无寒泉</strong>”的海南岛，苏轼精神不屈不挠、人生达观明豁的他庆幸<strong>此地无瘴，心忧如昨，乐又复至</strong>。在那里挨饿是常有的事，他在杂记中写到“食阳光止饥饿的办法，这恐怕难于易知易行。” 苏轼时常头上顶着一个西瓜，在田中边走边唱。一个七十多岁的老太太对他说：”翰林学士，你过去在朝中当大官，现在想来，是不是像一场春梦？“苏东坡闻此对于人生沉浮茅塞顿开，从此以后称她“<strong>春梦婆</strong>”。曾经尽享世间之贵、人间之美、民间之爱的苏轼，贬到海角天涯，当地无医无药，他写信给朋友则说：“每念京师无数人丧生于医师之手，予颇为庆幸。”</p>
+<p>苦不能代替乐，乐可以忘却苦。乐中无苦，是人生极致；苦中作乐，是人生的无奈。苏轼最后一次遇赦启程北上，心情之好，盛况空前，山水悦目，风光无限。在广州的宴席上，一个朋友向他开玩笑说：“我当时真以为你死了。”苏东坡说：“不错，我死了，并且还到了阴曹地府。在阴间路上遇上了章子厚，决心又还了阳。”苏东坡，一位罕见的文学巨匠，一位胸怀坦荡的官员，一位倜傥潇洒的才子，一位乐观向上的凡人，历史见证了他的睿智，他的的故事已经流行了千年，历久弥新、经久不衰，与此一切相伴的还有他的机敏而又劲锐的诙谐豁达。</p>
+<h2 id="扩展资料"><a href="#扩展资料" class="headerlink" title="扩展资料"></a>扩展资料</h2><p>苏轼长于散文创作，、<strong>《前赤壁赋》</strong>、<strong>《后赤壁赋》</strong>等名篇佳作脍炙人口，体现了中国文人的忧患意识和人文精神。他的诗，把现实主义精神和浪漫主义风格巧妙结合起来，多姿多彩，美轮美奂，代表了宋诗最高水平。</p>
+<p>他的词，清新豪健，题材广阔，挥洒自如，气势磅礴，开创了豪放词风。他的书法、绘画，也都达到了很高水平。除此之外，在哲学、茶道、烹饪、养生、园林艺术方面，他都有独到的造诣。</p>
+<p>近代国学大师王国维将屈原、陶渊明、杜甫、苏轼列为中国文学史上最伟大的诗人，并且将他们的思想、人品、学问、才华、待人接物、立身行事，看成浑然一个整体，是有一定道理的。</p>
+<p>更足称道者，作为一个封建时代的文人，苏轼身上，既无头巾气，无山林隐逸气，亦无以富贵骄人气，无忠臣孝子气，无大作家架子气；既无大臣杜门思过之态，亦无谪宦战战兢兢之态。他与你我同在，同悲同喜，丝毫也不刻板，浑是率然纯真的真性情，真品格。</p>
+<h1 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h1><p><strong>《苏轼 与侄孙元老》（其二）</strong></p>
+<p><strong>【原文】</strong><br>侄孙元老秀才，久不闻问①，不识即日体中佳否？蜀中骨肉，想不住得安讯。老人住海外如昨，但近来多病瘦瘁，不复如往日，不知余年复得相见否？循、惠不得书久矣②。旅况牢落③，不言可知。又海南连岁不熟，饮食百物艰难，及泉、广海舶绝不至④，药物鲊酱等皆无，厄穷至此，委命而已。老人与过子相对，如两苦行僧尔。然胸中亦超然自得，不改其度，知之，免忧。所要志文，但数年不死便作，不食言也。侄孙既是东坡骨肉，人所觑看⑤。住京，凡百加关防，切祝切祝！今有一书与许下诸子⑥，又恐陈浩秀才不过许，只令付与侄孙，切速为求便寄达。余惟万万自重。不一一。</p>
+<p><strong>【注释】</strong><br>①闻问：通音讯。<br>②循、惠：循指循州，治所在今广东惠阳东。时苏辙贬居循州，苏轼的家属留在惠州。<br>③牢落：孤寂零落。<br>④泉、广：泉指泉州（今福建泉州），广指广州（今广东广州），均为当时的海上贸易城市。<br>⑤觑看：细看、关注。<br>⑥许下诸子：当时苏轼兄弟两家分住惠州、筠州、许州和常州四处。许下指许州，治所在今河南许昌。</p>
+<p><strong>【译文】</strong><br>侄孙元老秀才，很久没有通音讯了，不知最近身体可好？四川的家人，都得不到他们安好的消息。我住在海南岛，情况一如往昔，只是近来生病，瘦了一些，不如往日那样健壮了，不知道这剩下的岁月还能不能与你再见面。循州和惠州也很久没通音讯了。贬谪在外的凄凉孤寂，我不说你也明白。加上海南岛连年荒灾，吃饭生活等事很是艰难，泉州和广州的商船很久没来了，因此连药品、咸菜、鱼酱等物都缺乏了，穷困到这种地步，只有听天由命了。我和儿子苏过相伴过日，好像两个苦行僧。不过心中依然超脱自得，没有改变心意，你知道了这些，可以不必替我们担忧。你以前向我要求的墓表，只要我不死，一定会写，不会食言的。因为你是我的侄孙，必然会受到人们的关注，你又住在京城，行事一定要小心防范，切记！切记！我还有一封书信给许州的家属，但是担心送信的陈浩秀才不路过许州，便只请他送信给你，请你再速速替我转寄吧。剩下的话不多说了，你一定要多保重呀。</p>
+<p><strong>【评析】</strong><br>苏元老，字在廷，是苏轼的侄孙。这是苏轼在儋州写给他的一封书札，是一封娓娓动听的家书。</p>
+<blockquote>
+<p><strong>本文引用如下文章</strong></p>
+</blockquote>
+<ul>
+<li><p><a href="http://www.360doc.com/content/16/0723/14/4958641_577787006.shtml">达观的苏轼</a></p>
+</li>
+<li><p><a href="http://ewenyan.com/articles/sc/tsbdj/112.html">苏轼 与侄孙元老-唐宋八大家文选赏析-原文,译文,注释-【易文言】-古文,文言文在线翻译网</a></p>
+</li>
+<li><p><a href="https://zhidao.baidu.com/question/1800521623232442187.html">苏轼的一生分为哪几个时期</a></p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>古代</tag>
+        <tag>诗/词人</tag>
       </tags>
   </entry>
 </search>
