@@ -1,52 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Mirai机器人使用帮助</title>
-    <url>/2021/11/21/bothelp/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p><strong>本教程需要在已经配置好Mirai的机器人的QQ群内使用</strong><br>  <a href="https://github.com/mamoe/mirai">Mirai下载</a><br>  <a href="https://mirai.mamoe.net/">MiraiForum</a><br><strong>本教程仅对部分插件的使用进行总结</strong><br>  <strong>许多优秀的插件都可以在Mirai官方论坛-MiraiForum找到</strong></p>
-</blockquote>
-<h1 id="Mirai机器人使用"><a href="#Mirai机器人使用" class="headerlink" title="Mirai机器人使用"></a>Mirai机器人使用</h1><h2 id="插件列表"><a href="#插件列表" class="headerlink" title="插件列表"></a>插件列表</h2><h3 id="BiliBili-Hepler"><a href="#BiliBili-Hepler" class="headerlink" title="BiliBili Hepler"></a>BiliBili Hepler</h3><blockquote>
-<p>uid为B站账户id<br>  例如 <a href="https://space.bilibili.com/508963009/">https://space.bilibili.com/508963009/</a> 的数字 508963009<br>  contact为QQ号或群号，可省略，会从当前环境自动获取</p>
-</blockquote>
-<blockquote>
-<p>for English code user</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /bili-dynamic add uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /bili-dynamic stop uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /bili-dynamic list [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /bili-live add uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /bili-live stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /bili-live list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /bili-season add sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /bili-season stop sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /bili-season list [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /bili-info aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /bili-info bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /bili-info dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /bili-info live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /bili-search user [keyword]</span><br><span class="line">    搜索用户</span><br><span class="line">    /bili-search bangumi [keyword]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /bili-search ft [keyword]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>对于中文用户</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /B动态 添加 uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /B动态 停止 uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /B动态 列表 [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /B直播 添加 uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /B直播 停止 stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /B直播 列表 list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /B剧集 添加 sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /B剧集 停止 sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /B剧集 列表 [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /B信息 aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /B信息 bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /B信息 dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /B信息 live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /B搜索 用户 [关键词]</span><br><span class="line">    搜索用户</span><br><span class="line">    /B搜索 番剧 [关键词]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /B搜索 影视 [关键词]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
-
-<p>BiliBili Helper由<a href="https://github.com/cssxsh">cssxsh</a>开发<br>具体使用操作由其在MiraiForum和GitHub上的介绍总结<br>这里仅介绍群员的使用方法</p>
-<h3 id="Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）"><a href="#Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）" class="headerlink" title="Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）"></a>Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）</h3><blockquote>
-<p>每天5点：每日句子 + 倒计时（可自定义倒计时事件）<br>  每天21点：每日诗词</p>
-</blockquote>
-<ul>
-<li>用法示例</li>
-</ul>
-<p>唱歌 YY<br>唱歌 YY -random<br>唱歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过语音条发送（不保证质量）</strong><br>点歌 YY<br>点歌 YY -random<br>点歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过小程序发送</strong></p>
-<p>Plum由<a href="https://gitee.com/K85">SakuraWald</a>开发<br>仅做部分总结</p>
-<h3 id="Mirai点歌插件"><a href="#Mirai点歌插件" class="headerlink" title="Mirai点歌插件"></a>Mirai点歌插件</h3><blockquote>
-<p><strong>默认指令列表</strong></p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">“#音乐 关键词”</span><br><span class="line">自动搜索所有源以找出来找最佳音频来源</span><br><span class="line"></span><br><span class="line">“#语音 关键词”</span><br><span class="line">自动搜索所有源，以语音信息的形式发出</span><br><span class="line"></span><br><span class="line">“#外链 关键词”</span><br><span class="line">自动搜索所有源，以外链信息的形式发出</span><br><span class="line"></span><br><span class="line">“#QQ 关键词”</span><br><span class="line">搜索QQ音乐</span><br><span class="line"></span><br><span class="line">“#网易 关键词”</span><br><span class="line">搜索网易云音乐</span><br><span class="line"></span><br><span class="line">“#网易电台 关键词”</span><br><span class="line">搜索网易云电台，一般来说是直接选择找到的第一个节目，但是关键词可以以 “电台名称|节目名称”的格式指定电台节目</span><br><span class="line"></span><br><span class="line">“#酷狗 关键词”</span><br><span class="line">搜索酷狗音乐</span><br><span class="line"></span><br><span class="line">“#千千 关键词”</span><br><span class="line">搜索千千音乐（百度音乐）</span><br><span class="line"></span><br><span class="line">“#点歌 来源 外观 关键词”</span><br><span class="line">实验性API</span><br><span class="line">高度自定义的点歌方法</span><br></pre></td></tr></table></figure>
-
-<p>Mirai点歌插件由<a href="https://github.com/khjxiaogu">khjxiaogu</a><br>仅做部分总结</p>
-]]></content>
-      <tags>
-        <tag>Mirai</tag>
-        <tag>Java/kotlin</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Collection</title>
     <url>/2021/09/23/collect/</url>
     <content><![CDATA[<blockquote>
 <p><strong>“收集只是拿来作为对自己不足的补充，并非一味的摘抄，活学活用才会在之后的生活中释放光亮。”</strong><br>  <strong>或许是最后一次更新这里，已经转移到<a href="https://jdbewl.github.io/docs">我的收藏</a>，可以移步到此观看最新的好言好句。</strong></p>
 </blockquote>
-<h1 id="收集"><a href="#收集" class="headerlink" title="收集"></a>收集</h1><h1 id="名言"><a href="#名言" class="headerlink" title="名言"></a>名言</h1><h2 id="欧美"><a href="#欧美" class="headerlink" title="欧美"></a>欧美</h2><ul>
+<h1 id="收集"><a href="#收集" class="headerlink" title="收集"></a>收集</h1><h2 id="名言"><a href="#名言" class="headerlink" title="名言"></a>名言</h2><h3 id="欧美"><a href="#欧美" class="headerlink" title="欧美"></a>欧美</h3><ul>
 <li><p>二十年后，更令你感到失望的不是你做了什么，而是不曾做过的，所以解开帆脚锁，驶离安全的港湾，赶着航程中的信风。去探索，去梦想，去发现。—— 马克·吐温</p>
 </li>
 <li><p>游戏是一系列有趣的选择。—— Sid Meier （席德·梅尔）</p>
@@ -77,7 +37,7 @@
 </li>
 </ul>
 <hr>
-<h2 id="亚洲"><a href="#亚洲" class="headerlink" title="亚洲"></a>亚洲</h2><h3 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h3><ul>
+<h3 id="亚洲"><a href="#亚洲" class="headerlink" title="亚洲"></a>亚洲</h3><h4 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h4><ul>
 <li><p>幽默是一切智慧的光芒，照耀在古今哲人的灵性中间。凡有幽默的素养者，都是聪明颖悟的。他们会用幽默手腕解决一切困难问题，而把每一种事态安排得从容不迫，恰到好处。 —— 钱学森</p>
 </li>
 <li><p>快乐不是件奇怪的东西，绝不会因为你分给了别人而减少，有时你分给的人越多，自己也会得到越多。—— 古龙（熊耀华）</p>
@@ -149,7 +109,7 @@
 </li>
 </ul>
 <hr>
-<h3 id="日本"><a href="#日本" class="headerlink" title="日本"></a>日本</h3><ul>
+<h4 id="日本"><a href="#日本" class="headerlink" title="日本"></a>日本</h4><ul>
 <li><p>正因为世界本身是平庸的，所以你也才平庸。—— 村上春树《寻羊冒险记》</p>
 </li>
 <li><p>不存在十全十美的文章，如同不存在彻头彻尾的绝望。—— 村上春树《且听风吟》</p>
@@ -793,6 +753,46 @@
       <tags>
         <tag>cmd</tag>
         <tag>powershell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mirai机器人使用帮助</title>
+    <url>/2021/11/21/bothelp/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p><strong>本教程需要在已经配置好Mirai的机器人的QQ群内使用</strong><br>  <a href="https://github.com/mamoe/mirai">Mirai下载</a><br>  <a href="https://mirai.mamoe.net/">MiraiForum</a><br><strong>本教程仅对部分插件的使用进行总结</strong><br>  <strong>许多优秀的插件都可以在Mirai官方论坛-MiraiForum找到</strong></p>
+</blockquote>
+<h1 id="Mirai机器人使用"><a href="#Mirai机器人使用" class="headerlink" title="Mirai机器人使用"></a>Mirai机器人使用</h1><h2 id="插件列表"><a href="#插件列表" class="headerlink" title="插件列表"></a>插件列表</h2><h3 id="BiliBili-Hepler"><a href="#BiliBili-Hepler" class="headerlink" title="BiliBili Hepler"></a>BiliBili Hepler</h3><blockquote>
+<p>uid为B站账户id<br>  例如 <a href="https://space.bilibili.com/508963009/">https://space.bilibili.com/508963009/</a> 的数字 508963009<br>  contact为QQ号或群号，可省略，会从当前环境自动获取</p>
+</blockquote>
+<blockquote>
+<p>for English code user</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /bili-dynamic add uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /bili-dynamic stop uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /bili-dynamic list [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /bili-live add uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /bili-live stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /bili-live list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /bili-season add sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /bili-season stop sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /bili-season list [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /bili-info aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /bili-info bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /bili-info dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /bili-info live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /bili-search user [keyword]</span><br><span class="line">    搜索用户</span><br><span class="line">    /bili-search bangumi [keyword]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /bili-search ft [keyword]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>对于中文用户</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 动态订阅指令</span><br><span class="line">    /B动态 添加 uid [contact]?</span><br><span class="line">    添加一个B站的动态订阅</span><br><span class="line">    /B动态 停止 uid [contact]?</span><br><span class="line">    停止一个B站的动态订阅</span><br><span class="line">    /B动态 列表 [contact]?</span><br><span class="line">    列出当前联系人的动态订阅</span><br><span class="line">* 直播订阅指令</span><br><span class="line">    /B直播 添加 uid [contact]?</span><br><span class="line">    添加一个b站视频订阅</span><br><span class="line">    /B直播 停止 stop uid [contact]?</span><br><span class="line">    停止一个b站视频订阅</span><br><span class="line">    /B直播 列表 list [contact]?</span><br><span class="line">    列出当前联系人的视频订阅</span><br><span class="line">* 剧集订阅指令</span><br><span class="line">    /B剧集 添加 sid [contact]?</span><br><span class="line">    添加一个b站剧集订阅</span><br><span class="line">    /B剧集 停止 sid [contact]?</span><br><span class="line">    停止一个b站剧集频订阅</span><br><span class="line">    /B剧集 列表 [contact]?</span><br><span class="line">    列出当前联系人的剧集订阅</span><br><span class="line">* 信息解析指令</span><br><span class="line">    /B信息 aid id</span><br><span class="line">    根据 avid 获取视频信息</span><br><span class="line">    /B信息 bvid id</span><br><span class="line">    根据 bvid 获取视频信息</span><br><span class="line">    /B信息 dynamic id</span><br><span class="line">    根据 id 获取动态信息</span><br><span class="line">    /B信息 live id</span><br><span class="line">    根据 id 获取直播信息</span><br><span class="line">* 搜索指令</span><br><span class="line">    /B搜索 用户 [关键词]</span><br><span class="line">    搜索用户</span><br><span class="line">    /B搜索 番剧 [关键词]</span><br><span class="line">    搜索番剧</span><br><span class="line">    /B搜索 影视 [关键词]</span><br><span class="line">    搜索影视</span><br></pre></td></tr></table></figure>
+
+<p>BiliBili Helper由<a href="https://github.com/cssxsh">cssxsh</a>开发<br>具体使用操作由其在MiraiForum和GitHub上的介绍总结<br>这里仅介绍群员的使用方法</p>
+<h3 id="Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）"><a href="#Plum-梅花娘（报早晚安-智能点歌-一言-随机动漫壁纸-聊天AI）" class="headerlink" title="Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）"></a>Plum-梅花娘（报早晚安+智能点歌+一言+随机动漫壁纸+@聊天AI）</h3><blockquote>
+<p>每天5点：每日句子 + 倒计时（可自定义倒计时事件）<br>  每天21点：每日诗词</p>
+</blockquote>
+<ul>
+<li>用法示例</li>
+</ul>
+<p>唱歌 YY<br>唱歌 YY -random<br>唱歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过语音条发送（不保证质量）</strong><br>点歌 YY<br>点歌 YY -random<br>点歌 YY 网易云&#x2F;酷狗&#x2F;QQ<br><strong>通过小程序发送</strong></p>
+<p>Plum由<a href="https://gitee.com/K85">SakuraWald</a>开发<br>仅做部分总结</p>
+<h3 id="Mirai点歌插件"><a href="#Mirai点歌插件" class="headerlink" title="Mirai点歌插件"></a>Mirai点歌插件</h3><blockquote>
+<p><strong>默认指令列表</strong></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">“#音乐 关键词”</span><br><span class="line">自动搜索所有源以找出来找最佳音频来源</span><br><span class="line"></span><br><span class="line">“#语音 关键词”</span><br><span class="line">自动搜索所有源，以语音信息的形式发出</span><br><span class="line"></span><br><span class="line">“#外链 关键词”</span><br><span class="line">自动搜索所有源，以外链信息的形式发出</span><br><span class="line"></span><br><span class="line">“#QQ 关键词”</span><br><span class="line">搜索QQ音乐</span><br><span class="line"></span><br><span class="line">“#网易 关键词”</span><br><span class="line">搜索网易云音乐</span><br><span class="line"></span><br><span class="line">“#网易电台 关键词”</span><br><span class="line">搜索网易云电台，一般来说是直接选择找到的第一个节目，但是关键词可以以 “电台名称|节目名称”的格式指定电台节目</span><br><span class="line"></span><br><span class="line">“#酷狗 关键词”</span><br><span class="line">搜索酷狗音乐</span><br><span class="line"></span><br><span class="line">“#千千 关键词”</span><br><span class="line">搜索千千音乐（百度音乐）</span><br><span class="line"></span><br><span class="line">“#点歌 来源 外观 关键词”</span><br><span class="line">实验性API</span><br><span class="line">高度自定义的点歌方法</span><br></pre></td></tr></table></figure>
+
+<p>Mirai点歌插件由<a href="https://github.com/khjxiaogu">khjxiaogu</a><br>仅做部分总结</p>
+]]></content>
+      <tags>
+        <tag>Mirai</tag>
+        <tag>Java/kotlin</tag>
       </tags>
   </entry>
   <entry>
