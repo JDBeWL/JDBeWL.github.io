@@ -41,197 +41,128 @@
       </tags>
   </entry>
   <entry>
-    <title>一个好用的手机投影电脑的软件</title>
-    <url>/2021/09/23/onesoftctctp/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<h2 id="桌面端环境"><a href="#桌面端环境" class="headerlink" title="桌面端环境"></a>桌面端环境</h2><p>Windows、Linux、MacOS  </p>
-</blockquote>
-<h2 id="使用scrcpy的优点"><a href="#使用scrcpy的优点" class="headerlink" title="使用scrcpy的优点"></a>使用scrcpy的优点</h2><p>   画面（1920×1080或以上）<br>   低延迟（35-70ms）<br>   启动迅速（&lt;1秒显示第一张图像）<br>   非依赖性（设备上未安装任何东西）<br>   设备要求：Android 5.0以上  </p>
-<h1 id="如何使用scrcpy"><a href="#如何使用scrcpy" class="headerlink" title="如何使用scrcpy"></a>如何使用scrcpy</h1><blockquote>
-<p> 手机端开启adb<br> PC端下载scrcpy  </p>
-</blockquote>
-<h2 id="如何打开adb调试"><a href="#如何打开adb调试" class="headerlink" title="如何打开adb调试"></a>如何打开adb调试</h2><p>（若已经打开可以跳过这一步）  </p>
-<p>以MIUI 12.5为例  </p>
-<ul>
-<li><strong>打开开发者模式</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4myFf8r4Re-kRFAxcEGnqa2XGHrHGcWkJRZOyN49QxGZKM1ffZtDChMTCj-7KBZM5EFBjl_Qt2SSSRcf_ahZSxodwHViA3uGWUJkrGX6L-UqH5D5O_tIEymFHFPdMLjv2TG-OSZT-6a1lsBW4yJOs49cTfy980gvxLTn-LNHaqL6BbXthR8b7_ON1ebNln2O_v?width=461&height=1024&cropmode=none" alt="打开开发者模式"></p>
-<hr>
-<ul>
-<li><strong>进入开发者模式</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mjJcXGyOhmguLn9Ojnd-kdUHyESb17zQiSpViWiupyIJz8s_4H3XSinKOKAjvbGYbyDoNq_MQlPDHzpZF2uC5svjmbib0cYZ7wiXRIeb6i_tuh7XiqG7gRedEarBVpgifEgcJVZBXhFfIi0Y1Mz_Gwm2fP4FvMJNnd1rguZfq8m-O_XgApM5or0LMDLq_BwpS?width=461&height=1024&cropmode=none" alt="进入开发者模式"></p>
-<hr>
-<ul>
-<li><strong>打开ADB调试</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mfHmYJswvkqMve0gTxpJX6spJqNVafq4SozGCnfPGX0xaJ7kr37T7aOvTl215MvBra8jp3R92UyXDzTN0iXDhCaVw5uBjlYtGxK0cB1nDz0Vv0e-7syK19z3UfUw63yXbaxPQcn-x7qMD9fjuebCUWdGlXn0l6z4EXUHgwyMKg1UdjxY5fol2sB3mdOeDg7pn?width=461&height=1024&cropmode=none" alt="打开ADB调试"></p>
-<hr>
-<h2 id="连接电脑"><a href="#连接电脑" class="headerlink" title="连接电脑"></a>连接电脑</h2><blockquote>
-<p> <strong>同意ADB调试</strong></p>
-</blockquote>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mMgB1U7kI4l_GY-GrPA-ISyeX9NZpQWEh-Zspp6AuqdoRMkH5Vd7KFsqX8jhIPflS9cct1aMqYlWVWtnJAjuz8KRKNMuPoDQxqo0XDFDtPB_iSe0U0PtBky6zMUvbk5vS3aFmSsJP0o-q-dbJMzNDa8tfYLLBfsGKlywv-fwgZStlqxnDDnmzmSKrKpRo3FHZ?width=1080&height=790&cropmode=none" alt="同意ADB调试"> </p>
-<hr>
-<h3 id="有线连接"><a href="#有线连接" class="headerlink" title="有线连接"></a><strong>有线连接</strong></h3><p>直接运行scrcpy-console.bat即可通过有线方式连接</p>
-<hr>
-<h3 id="无线连接"><a href="#无线连接" class="headerlink" title="无线连接"></a><strong>无线连接</strong></h3><blockquote>
-<p> 可使用powershell和cmd进行命令输入<br> 此处仅展示powershell，命令基本一致（cmd下不输入 .\adb ，直接输入 adb 即可执行命令）  </p>
-</blockquote>
-<hr>
-<p>输入此查看你的设备是否在线</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br></pre></td></tr></table></figure>
-
-<p>如果在线，则应会显示如下图类似的文字<br><img src="https://dsm01pap001files.storage.live.com/y4mvJ8fiNtV3Shi8uR4LVruhCg-JBKjX8Iwr7LmHNVO8UpuJSBVqBJpYLzT7FHeDt5rZSKqv8OMq_O5TCg_mGD3Mpcc1VmDpVzam_s4LO-V1epupolPLJfd1ZoF5vsdqu0SvX5gjRLRDj6JO6kM87EKkWE645JsQpjJEHB9O12MTckyRhq52YYV_EZjOco8scG7?width=586&height=91&cropmode=none" alt="设备在线"></p>
-<hr>
-<p>确认设备在线后输入以下命令获取手机ip地址</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb shell config </span><br></pre></td></tr></table></figure>
-
-<p>应有如下显示<br><img src="https://dsm01pap001files.storage.live.com/y4mE__Y6BQJPgLsANoYuayjl60M5Edi1ep59krBKCoSYFiZ5M7L4kh2rn_6zwMXydeKQrgBdO_phv4jhcVaMxwwLL2w0YqVlNAmuM8DYh9M_EI28DxKH9DxWYma-YxJju4ftuKt1YEklshyxXakrJYp44othfz_I2nxsktExyB44o6vtiOKSXcPfz9ji2wsLS7Y?width=634&height=192&cropmode=none" alt="获取手机端ip地址"></p>
-<hr>
-<p>若有，则键入如下命令</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb tcpip <span class="number">6666</span></span><br></pre></td></tr></table></figure>
-
-<p>6666代表的是你的手机要开放的端口号，可自由更改<br>原生安卓系统可以直接打开无线调试，但我手上的k30i 5G似乎屏蔽了无线调试功能<br>手机需要和电脑处在同一网络中  </p>
-<hr>
-<p>拔掉数据线，在powershell中输入  </p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb connect <span class="number">192.168</span>.<span class="number">1.17</span>:<span class="number">6666</span></span><br></pre></td></tr></table></figure>
-
-<p>出现如下图片即代表已经和手机建立连接<br><img src="https://dsm01pap001files.storage.live.com/y4mcKwGH_MwRJN3Xvnj52NUK4he-UEV0gFz0NSvmPyza5aklPVUbxm0ABMYjUH2bH_u6vdQuLoitm2TtYJVgGPuSitsTrgvqiQWf-K4BqPjXHkgtmHRC5HFnqTevOvs7SOumSbEVmGvfqv4Lhy8sLQQAj-HddKj3zDx9aDE3U4FUq7C4CHviU5yxymuWz5tqNr8?width=635&height=68&cropmode=none" alt="与手机成功建立连接"></p>
-<hr>
-<p>键入如下命令即可与手机端建立无线连接<br>（cmd下可以直接输入scrcpy）  </p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
-
-<p>与手机成功建立连接如图<br><img src="https://dsm01pap001files.storage.live.com/y4mSpjiaEGMQHgbwikDjqnH2r3ABGCVtUbCNjW8vwZbdo2GG1-2GlgpVmoNOjVQco_z6Ob_hpURfbJrdRmv9FXroK3gJld_fErrEFWG9PF4eO1hq89Bu3QWPudQWDxZydHN6h9Wat4c7jD68WQ-vxjW_Qgy1A_RDpoBTb-yq2fnYVNUp4eTakHe8JT6Th7r3HLs?width=950&height=129&cropmode=none" alt="与手机成功建立连接"></p>
-<hr>
-<p>整理命令如下</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br><span class="line">.\adb shell config</span><br><span class="line">.\adb tcpip 端口号</span><br><span class="line">.\adb connect 手机ip地址</span><br><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="补充操作-CMD"><a href="#补充操作-CMD" class="headerlink" title="补充操作 (CMD)"></a>补充操作 (CMD)</h1><blockquote>
-<p> 以下补充转自<a href="https://blog.csdn.net/aa464971/article/details/83349215">https://blog.csdn.net/aa464971/article/details/83349215</a></p>
-</blockquote>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">#帮助</span><br><span class="line">scrcpy --<span class="built_in">help</span></span><br><span class="line"></span><br><span class="line">#设置码率（默认<span class="number">8</span>M）</span><br><span class="line">scrcpy -b <span class="number">8</span>M</span><br><span class="line"></span><br><span class="line">#限制投屏尺寸</span><br><span class="line">scrcpy -m <span class="number">1024</span></span><br><span class="line"></span><br><span class="line">#裁剪投屏屏幕(长:宽:偏移x:偏移y)</span><br><span class="line">scrcpy -c <span class="number">800</span>:<span class="number">800</span>:<span class="number">0</span>:<span class="number">0</span></span><br><span class="line"></span><br><span class="line">#投屏并录屏</span><br><span class="line">scrcpy -r file.mp4</span><br><span class="line"></span><br><span class="line">#不投屏只录屏</span><br><span class="line">scrcpy -Nr file.mp4</span><br><span class="line"></span><br><span class="line">#手指触摸的时候显示轨迹球</span><br><span class="line">scrcpy -t</span><br><span class="line"></span><br><span class="line">#一些快捷键</span><br><span class="line">切换全屏模式 Ctrl+f</span><br><span class="line">将窗口调整为<span class="number">1</span>：<span class="number">1</span>（完美像素） Ctrl+g</span><br><span class="line">调整窗口大小以删除黑色边框 Ctrl+x | 双击黑色背景</span><br><span class="line">设备HOME键 Ctrl+h | 鼠标中键</span><br><span class="line">设备BACK键 Ctrl+b | 鼠标右键</span><br><span class="line">设备任务管理键 Ctrl+s</span><br><span class="line">设备 菜单 键 Ctrl+m</span><br><span class="line">设备音量+键 Ctrl+↑</span><br><span class="line">设备音量-键 Ctrl+↓</span><br><span class="line">设备电源键 Ctrl+p</span><br><span class="line">点亮手机屏幕 鼠标右键</span><br><span class="line">复制内容到设备 Ctrl+v</span><br><span class="line">启用/禁用FPS计数器（stdout） Ctrl+i</span><br><span class="line">安装APK 将apk文件拖入投屏</span><br><span class="line">传输文件到设备 将文件拖入投屏（非apk）</span><br></pre></td></tr></table></figure>
-
-<p>部分内容来自<a href="https://www.jianshu.com/p/3f9116fb39ad">Ashin10</a>   </p>
-<p>scrcpy的github链：<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>  </p>
-]]></content>
-      <tags>
-        <tag>cmd</tag>
-        <tag>powershell</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Collection</title>
     <url>/2021/09/23/collect/</url>
     <content><![CDATA[<blockquote>
-<p><strong>可能会定期同步，但是大概率鸽了:)</strong></p>
+<p><strong>“收集只是拿来作为对自己不足的补充，并非一味的摘抄，活学活用才会在之后的生活中释放光亮。”</strong><br>  <strong>或许是最后一次更新这里，已经转移到<a href="https://jdbewl.github.io/docs">我的收藏</a>，可以移步到此观看最新的好言好句。</strong></p>
 </blockquote>
-<h1 id="收集"><a href="#收集" class="headerlink" title="收集"></a>收集</h1><h2 id="名言"><a href="#名言" class="headerlink" title="名言"></a>名言</h2><ul>
-<li><p>游戏是一系列有趣的选择。<br>                        —— Sid Meier （席德·梅尔）</p>
+<h1 id="收集"><a href="#收集" class="headerlink" title="收集"></a>收集</h1><h1 id="名言"><a href="#名言" class="headerlink" title="名言"></a>名言</h1><h2 id="欧美"><a href="#欧美" class="headerlink" title="欧美"></a>欧美</h2><ul>
+<li><p>二十年后，更令你感到失望的不是你做了什么，而是不曾做过的，所以解开帆脚锁，驶离安全的港湾，赶着航程中的信风。去探索，去梦想，去发现。—— 马克·吐温</p>
 </li>
-<li><p>幽默是一切智慧的光芒，照耀在古今哲人的灵性中间。凡有幽默的素养者，都是聪明颖悟的。他们会用幽默手腕解决一切困难问题，而把每一种事态安排得从容不迫，恰到好处。<br>                        —— 钱学森</p>
+<li><p>游戏是一系列有趣的选择。—— Sid Meier （席德·梅尔）</p>
 </li>
-<li><p>快乐不是件奇怪的东西，绝不会因为你分给了别人而减少，有时你分给的人越多，自己也会得到越多。<br>                        —— 古龙</p>
+<li><p>时间一直走，没有尽头，只有路口。—— 克莱尔·麦克福《摆渡人》</p>
 </li>
-<li><p>正因为世界本身是平庸的，所以你也才平庸。<br>                        —— 《寻羊冒险记》</p>
+<li><p>沉默可能产生误解，我需要说话，说话将我推向歧途，我必须沉默。 —— 赫塔·米勒《国王鞠躬,国王杀人》</p>
 </li>
-<li><p>太讲究理智，容易与人产生摩擦；太顺从情感，则会被情绪左右；太坚持己见，终将穷途末路。总而言之，这世间并不宜人。<br>                        —— 夏目簌石</p>
+<li><p>人生是个含泪的微笑。—— 欧·亨利</p>
 </li>
-<li><p>我的梦想，值得我本人去夺取。我今天的话，绝不是我昨天生活的冷淡抄袭。<br>                        —— 夏目漱石《我是猫》</p>
+<li><p>冰山运动之雄伟壮观，是因为他只有八分之一在水面上。—— 海明威《午后之死》</p>
 </li>
-<li><p>我们曾如此渴望命运的波澜，到最后才发现：人生最曼妙的风景，竟是内心的淡定与从容。<br>                        —— 杨绛</p>
+<li><p>再优秀的人都有忘记自我的时候。 —— 莎士比亚</p>
 </li>
-<li><p>时间一直走，没有尽头，只有路口。<br>                        —— 《摆渡人》</p>
+<li><p>不前进则后退，正如过去影响当下，未来也影响当下。—— 尼采</p>
 </li>
-<li><p>我的悲伤还来不及出发，就已经到站下车。<br>                        —— 《第七天》</p>
+<li><p>做你想做的自己，永远都不嫌晚。—— 乔治·艾略特</p>
 </li>
-<li><p>人生是个含泪的微笑。<br>                        —— 欧·亨利</p>
+<li><p>人生最大的失败是害怕失败。—— 阿尔伯特·哈伯德</p>
 </li>
-<li><p>你是非常可爱的人，真应该遇到最好的人，我希望我就是。<br>                        —— 《爱你就像爱生命》</p>
+<li><p>无论梦想之星多么遥远，只要不放弃，就有触及的可能。 —— 赫尔曼·黑塞</p>
 </li>
-<li><p>沉默可能产生误解，我需要说话，说话将我推向歧途，我必须沉默。<br>                        —— 赫塔·米勒</p>
+<li><p>“记住你即将死去”是我一生中遇到的最重要箴言。它帮我指明了生命中重要的选择，因为几乎所有的事情，包括所有的荣誉、所有的骄傲、所有对难堪和失败的恐惧，这些在死亡面前都会消失。—— 乔布斯</p>
 </li>
-<li><p>最最好的，与最最痛苦的，是一样的。<br>                        —— 《文学与少女》</p>
+<li><p>要自爱，不要把你全身心的爱，灵魂和力量，作为礼物慷慨给予，浪费在不需要和受轻视的地方。—— 夏洛蒂·勃朗特《简·爱》</p>
 </li>
-<li><p>云无心以出岫，鸟倦飞而知还。<br>                        —— 《归去来兮辞》</p>
+<li><p>如果生命无可避免地会结束，我们活在其中，就应该用爱和希望为它上色。—— 马克·夏克尔</p>
+</li>
+</ul>
+<hr>
+<h2 id="亚洲"><a href="#亚洲" class="headerlink" title="亚洲"></a>亚洲</h2><h3 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h3><ul>
+<li><p>幽默是一切智慧的光芒，照耀在古今哲人的灵性中间。凡有幽默的素养者，都是聪明颖悟的。他们会用幽默手腕解决一切困难问题，而把每一种事态安排得从容不迫，恰到好处。 —— 钱学森</p>
+</li>
+<li><p>快乐不是件奇怪的东西，绝不会因为你分给了别人而减少，有时你分给的人越多，自己也会得到越多。—— 古龙（熊耀华）</p>
+</li>
+<li><p>我们曾如此渴望命运的波澜，到最后才发现：人生最曼妙的风景，竟是内心的淡定与从容。我们曾如此期盼外界的认可，到最后才知道，世界是自己的，与他人毫无关系。—— 杨绛《一百岁感言》</p>
+</li>
+<li><p>世态人情，比明月清风更饶有滋味；可作书读，可当戏看。书上的描摹，戏里的扮演，即使栩栩如生，究竟只是文艺作品；人情世态，都是天真自然的流露，往往超出情理之外，新奇得令人震惊，令人骇怪，给人以更深刻的效益，更奇妙的娱乐。—— 杨绛《将饮茶》</p>
+</li>
+<li><p>我的悲伤还来不及出发，就已经到站下车。—— 余华《第七天》</p>
+</li>
+<li><p>你是非常可爱的人，真应该遇到最好的人，我希望我就是。—— 王小波《爱你就像爱生命》</p>
 </li>
 <li><p>高贵者最愚蠢，卑贱者最聪明！</p>
-<p><strong>多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。</strong></p>
+<p>多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。</p>
 <p>哪里有压迫，哪里就有反抗！</p>
 <p>军民团结如一人，试看天下谁能敌！</p>
-<p><strong>自信人生二百年，会当水击三千里。</strong></p>
+<p>自信人生二百年，会当水击三千里。</p>
 <p>艰苦的工作就象担子，摆在我们的面前，看我们敢不敢承担。担子有轻有重。有的人拈轻怕重，把重担子推给人家，自己拣轻的挑。这就不是好的态度。有的同志不是这样，享受让给人家，担子拣重的挑，吃苦在别人前头，享受在别人后头。这样的同志就是好同志。</p>
 <p>凡是反动的东西，你不打，他就不倒。这也和扫地一样，扫帚不到，灰尘照例不会自己跑掉。</p>
 <p>一个人做点好事并不难，难的是一辈子做好事，不做坏事，一贯的有益于广大群众，一贯的有益于青年，一贯的有益于革命，艰苦奋斗几十年如一日，这才是最难最难的呵！</p>
 <p>前途是光明的，道路是曲折的。</p>
-<p><strong>与天奋斗，其乐无穷！与地奋斗，其乐无穷！与人奋斗，其乐无穷！</strong></p>
+<p>与天奋斗，其乐无穷！与地奋斗，其乐无穷！与人奋斗，其乐无穷！</p>
 <p>学习的敌人是自己的满足，要认真学习一点东西，必须从不自满开始！</p>
 <p>历史是由人民创造的。</p>
 <p>鸡蛋因适当的温度而变化为鸡，但温度不能使石头变为鸡。</p>
 <p>不管风吹浪打，胜似闲庭信步！</p>
-<p><strong>你要知道梨子的味道！你就得变革梨子！亲口吃一吃。</strong></p>
+<p>你要知道梨子的味道！你就得变革梨子！亲口吃一吃。</p>
 <p>世上无难事,只要肯登攀。</p>
 <p>我家里有两个党，一个是父亲，是执政党，反对党，由我，我的母亲和弟弟组成，有事甚至工人也在内。不过，在反对党的“联合战线”之中，意见并不一致。母亲主张一种间接进攻的政策，她不赞成任何感情作用的显示和公开反抗执政党的企图。她说这不和中国的道理。</p>
-<p>在这个时期，我的头脑是自由主义，民主改良主义，及空想社会主义的有趣混合物。我模糊地景仰“19世纪的民族主义”、乌托邦主义和旧式的自由主义，但我坚决反对军阀和帝国主义。<br>                        —— 毛泽东&#x2F;《毛泽东选集》</p>
-</li>
-<li><p>善应莫如收心，解谬莫如澹志。<br>                        —— 陈继儒《小窗幽记》</p>
+<p>在这个时期，我的头脑是自由主义，民主改良主义，及空想社会主义的有趣混合物。我模糊地景仰“19世纪的民族主义”、乌托邦主义和旧式的自由主义，但我坚决反对军阀和帝国主义。—— 毛泽东&#x2F;《毛泽东选集》</p>
 </li>
 <li><p>书看了一定会有用，不一定非要有什么具体的改变，人往前走的时候未必会数着一二三，但无论多少步，都是一二三累积起来的。</p>
 <p>日子总是往前走，人总是在变，不知道是淡忘还是适应。</p>
 <p>“生日快乐丞哥，希望你永远笑的像一束光，你是我的阳光。”<br>“生日快乐顾飞，跟着光。”</p>
 <p>人就是这样的，想来想去，犹豫来犹豫去，觉得自己没有准备好，勇气没攒够，其实只要迈出去了那一步，就会发现其实所有的一切早就准备好了。</p>
-<p><strong>没有谁的生活会一直完美，但无论什么时候，都要看着前方，满怀希望就会所向披靡。</strong><br>                        —— 巫哲《撒野》</p>
+<p>没有谁的生活会一直完美，但无论什么时候，都要看着前方，满怀希望就会所向披靡。—— 巫哲《撒野》</p>
 </li>
-<li><p>冰山运动之雄伟壮观，是因为他只有八分之一在水面上。<br>                        —— 海明威《午后之死》</p>
+<li><p>铁肩担道义，妙手著文章。—— 李大钊</p>
 </li>
-<li><p>铁肩担道义，妙手著文章。<br>                        —— 李大钊</p>
-</li>
-<li><p>再优秀的人都有忘记自我的时候。<br>                        —— 莎士比亚</p>
-</li>
-<li><p>不前进则后退，正如过去影响当下，未来也影响当下。<br>                        —— 尼采</p>
-</li>
-<li><p>做你想做的自己，永远都不嫌晚。<br>                        —— 乔治·艾略特</p>
-</li>
-<li><p>人生最大的失败是害怕失败。<br>                        —— 阿尔伯特·哈伯德</p>
-</li>
-<li><p>无论梦想之星多么遥远，只要不放弃，就有触及的可能。<br>                        —— 赫尔曼·黑塞</p>
-</li>
-<li><p>躲得开的，都不是缘分；猜的偷的，都不叫人生。<br>                        —— 大冰《好的好的》</p>
-</li>
-<li><p>不存在十全十美的文章，如同不存在彻头彻尾的绝望。<br>                        —— 村上春树《且听风吟》</p>
-</li>
-<li><p>希望你能记住我，记住我这样活过，这样在你身边带过。<br>                        —— 《挪威的森林》</p>
+<li><p>躲得开的，都不是缘分；猜的偷的，都不叫人生。—— 大冰（焉冰）《好的好的》</p>
 </li>
 <li><p>它国深厚而沉默，也许，身后正是沉默的原因。</p>
-<p>没有悲剧就没有悲壮，就没有崇高。<br>                        —— 余秋雨《文化苦旅》</p>
+<p>没有悲剧就没有悲壮，就没有崇高。—— 余秋雨《文化苦旅》</p>
 </li>
-<li><p>为别人活着，也要为自己活着，希望和悲伤都是一缕光，总有一天，我们会再相遇。<br>                        —— 《云边有个小卖部》</p>
+<li><p>给岁月以文明，而不是给文明以岁月。—— 刘慈欣《三体》</p>
 </li>
-<li><p>论起来荣华富贵，原不过是过眼云烟，但自古圣贤，以人品根砥为重。<br>                        —— 《红楼梦》</p>
+<li><p>为别人活着，也要为自己活着，希望和悲伤都是一缕光，总有一天，我们会再相遇。—— 张嘉佳《云边有个小卖部》</p>
 </li>
-<li><p>人是为活着本身而活着的，而不是想活着之外的任何事物所活着。<br>                        —— 余华《活着》</p>
+<li><p>论起来荣华富贵，原不过是过眼云烟，但自古圣贤，以人品根砥为重。—— 曹雪芹 著&#x2F;程伟元、高额 整理《红楼梦》</p>
 </li>
-<li><p>给岁月以文明，而不是给文明以岁月。<br>                        —— 刘慈欣《三体》</p>
+<li><p>人是为活着本身而活着的，而不是想活着之外的任何事物所活着。—— 余华《活着》</p>
 </li>
-<li><p>要自爱，不要把你全身心的爱，灵魂和力量，作为礼物慷慨给予，浪费在不需要和受轻视的地方。<br>                        —— 夏洛蒂·勃朗特《简·爱》</p>
-</li>
-<li><p>蒲公英像一冰冰带露的花伞，被春风轻轻托起，飘扬空中，金黄的如丝如茧般的花蕾，在阳光下变幻着奇异的光斑。<br>                        —— 沈梦溪 《狼王梦》</p>
+<li><p>蒲公英像一冰冰带露的花伞，被春风轻轻托起，飘扬空中，金黄的如丝如茧般的花蕾，在阳光下变幻着奇异的光斑。—— 沈梦溪 《狼王梦》</p>
 </li>
 <li><p>我不能延长生命的长度，但可以拓展生命的宽度。</p>
-<p>剩下的生命愈是短暂，我愈要使之过得丰盈饱满。<br>                        —— 汪国真《热爱生命》</p>
+<p>剩下的生命愈是短暂，我愈要使之过得丰盈饱满。—— 汪国真《热爱生命》</p>
 </li>
-<li><p>人生苦又如初见，何事秋风悲画扇。<br>                        —— 清 纳兰容若《木兰花·拟古决绝词柬友》</p>
+<li><p>一定要爱这点什么，恰似草木对光阴的柔情。—— 汪曾祺《人间草木》</p>
 </li>
-<li><p>“记住你即将死去”是我一生中遇到的最重要箴言。它帮我指明了生命中重要的选择，因为几乎所有的事情，包括所有的荣誉、所有的骄傲、所有对难堪和失败的恐惧，这些在死亡面前都会消失。<br>                        —— 乔布斯 </p>
+<li><p>云无心以出岫，鸟倦飞而知还。—— [晋]陶渊明《归去来兮辞》</p>
 </li>
-<li><p>一定要爱这点什么，恰似草木对光阴的柔情。<br>                        —— 汪曾祺《人间草木》</p>
+<li><p>善应莫如收心，解谬莫如澹志。—— 陈继儒《小窗幽记》</p>
 </li>
-<li><p>我居北海君南海，寄雁传书谢不能。<br>                        —— 黄庭坚《寄黄几复》</p>
+<li><p>人生苦又如初见，何事秋风悲画扇。—— 清 纳兰容若《木兰花·拟古决绝词柬友》</p>
 </li>
-<li><p>时间以同样的方式流经每个人，而每个人却以不同的方式度过时间。<br>                        —— 川端康成</p>
+<li><p>我居北海君南海，寄雁传书谢不能。—— 黄庭坚《寄黄几复》</p>
 </li>
-<li><p>人生碌碌，竟短论长，却不道荣枯有数，得失难量。<br>                        —— 沈复《浮生六记》</p>
+<li><p>人生碌碌，竟短论长，却不道荣枯有数，得失难量。—— 沈复《浮生六记》</p>
 </li>
-<li><p>如果生命无可避免地会结束，我们活在其中，就应该用爱和希望为它上色。<br>                        —— 马克·夏克尔</p>
+</ul>
+<hr>
+<h3 id="日本"><a href="#日本" class="headerlink" title="日本"></a>日本</h3><ul>
+<li><p>正因为世界本身是平庸的，所以你也才平庸。—— 村上春树《寻羊冒险记》</p>
+</li>
+<li><p>不存在十全十美的文章，如同不存在彻头彻尾的绝望。—— 村上春树《且听风吟》</p>
+</li>
+<li><p>希望你能记住我，记住我这样活过，这样在你身边带过。—— 村上春树《挪威的森林》</p>
+</li>
+<li><p>太讲究理智，容易与人产生摩擦；太顺从情感，则会被情绪左右；太坚持己见，终将穷途末路。总而言之，这世间并不宜人。 —— 夏目簌石《草枕》 ​​​</p>
+</li>
+<li><p>我的梦想，值得我本人去夺取。我今天的话，绝不是我昨天生活的冷淡抄袭。—— 夏目漱石《我是猫》</p>
+</li>
+<li><p>最最好的，与最最痛苦的，是一样的。—— 野村美月《文学少女》</p>
+</li>
+<li><p>时间以同样的方式流经每个人，而每个人却以不同的方式度过时间。—— 川端康成</p>
 </li>
 </ul>
 <hr>
@@ -783,6 +714,85 @@
 ]]></content>
       <tags>
         <tag>collect</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一个好用的手机投影电脑的软件</title>
+    <url>/2021/09/23/onesoftctctp/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<h2 id="桌面端环境"><a href="#桌面端环境" class="headerlink" title="桌面端环境"></a>桌面端环境</h2><p>Windows、Linux、MacOS  </p>
+</blockquote>
+<h2 id="使用scrcpy的优点"><a href="#使用scrcpy的优点" class="headerlink" title="使用scrcpy的优点"></a>使用scrcpy的优点</h2><p>   画面（1920×1080或以上）<br>   低延迟（35-70ms）<br>   启动迅速（&lt;1秒显示第一张图像）<br>   非依赖性（设备上未安装任何东西）<br>   设备要求：Android 5.0以上  </p>
+<h1 id="如何使用scrcpy"><a href="#如何使用scrcpy" class="headerlink" title="如何使用scrcpy"></a>如何使用scrcpy</h1><blockquote>
+<p> 手机端开启adb<br> PC端下载scrcpy  </p>
+</blockquote>
+<h2 id="如何打开adb调试"><a href="#如何打开adb调试" class="headerlink" title="如何打开adb调试"></a>如何打开adb调试</h2><p>（若已经打开可以跳过这一步）  </p>
+<p>以MIUI 12.5为例  </p>
+<ul>
+<li><strong>打开开发者模式</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4myFf8r4Re-kRFAxcEGnqa2XGHrHGcWkJRZOyN49QxGZKM1ffZtDChMTCj-7KBZM5EFBjl_Qt2SSSRcf_ahZSxodwHViA3uGWUJkrGX6L-UqH5D5O_tIEymFHFPdMLjv2TG-OSZT-6a1lsBW4yJOs49cTfy980gvxLTn-LNHaqL6BbXthR8b7_ON1ebNln2O_v?width=461&height=1024&cropmode=none" alt="打开开发者模式"></p>
+<hr>
+<ul>
+<li><strong>进入开发者模式</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mjJcXGyOhmguLn9Ojnd-kdUHyESb17zQiSpViWiupyIJz8s_4H3XSinKOKAjvbGYbyDoNq_MQlPDHzpZF2uC5svjmbib0cYZ7wiXRIeb6i_tuh7XiqG7gRedEarBVpgifEgcJVZBXhFfIi0Y1Mz_Gwm2fP4FvMJNnd1rguZfq8m-O_XgApM5or0LMDLq_BwpS?width=461&height=1024&cropmode=none" alt="进入开发者模式"></p>
+<hr>
+<ul>
+<li><strong>打开ADB调试</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mfHmYJswvkqMve0gTxpJX6spJqNVafq4SozGCnfPGX0xaJ7kr37T7aOvTl215MvBra8jp3R92UyXDzTN0iXDhCaVw5uBjlYtGxK0cB1nDz0Vv0e-7syK19z3UfUw63yXbaxPQcn-x7qMD9fjuebCUWdGlXn0l6z4EXUHgwyMKg1UdjxY5fol2sB3mdOeDg7pn?width=461&height=1024&cropmode=none" alt="打开ADB调试"></p>
+<hr>
+<h2 id="连接电脑"><a href="#连接电脑" class="headerlink" title="连接电脑"></a>连接电脑</h2><blockquote>
+<p> <strong>同意ADB调试</strong></p>
+</blockquote>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mMgB1U7kI4l_GY-GrPA-ISyeX9NZpQWEh-Zspp6AuqdoRMkH5Vd7KFsqX8jhIPflS9cct1aMqYlWVWtnJAjuz8KRKNMuPoDQxqo0XDFDtPB_iSe0U0PtBky6zMUvbk5vS3aFmSsJP0o-q-dbJMzNDa8tfYLLBfsGKlywv-fwgZStlqxnDDnmzmSKrKpRo3FHZ?width=1080&height=790&cropmode=none" alt="同意ADB调试"> </p>
+<hr>
+<h3 id="有线连接"><a href="#有线连接" class="headerlink" title="有线连接"></a><strong>有线连接</strong></h3><p>直接运行scrcpy-console.bat即可通过有线方式连接</p>
+<hr>
+<h3 id="无线连接"><a href="#无线连接" class="headerlink" title="无线连接"></a><strong>无线连接</strong></h3><blockquote>
+<p> 可使用powershell和cmd进行命令输入<br> 此处仅展示powershell，命令基本一致（cmd下不输入 .\adb ，直接输入 adb 即可执行命令）  </p>
+</blockquote>
+<hr>
+<p>输入此查看你的设备是否在线</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br></pre></td></tr></table></figure>
+
+<p>如果在线，则应会显示如下图类似的文字<br><img src="https://dsm01pap001files.storage.live.com/y4mvJ8fiNtV3Shi8uR4LVruhCg-JBKjX8Iwr7LmHNVO8UpuJSBVqBJpYLzT7FHeDt5rZSKqv8OMq_O5TCg_mGD3Mpcc1VmDpVzam_s4LO-V1epupolPLJfd1ZoF5vsdqu0SvX5gjRLRDj6JO6kM87EKkWE645JsQpjJEHB9O12MTckyRhq52YYV_EZjOco8scG7?width=586&height=91&cropmode=none" alt="设备在线"></p>
+<hr>
+<p>确认设备在线后输入以下命令获取手机ip地址</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb shell config </span><br></pre></td></tr></table></figure>
+
+<p>应有如下显示<br><img src="https://dsm01pap001files.storage.live.com/y4mE__Y6BQJPgLsANoYuayjl60M5Edi1ep59krBKCoSYFiZ5M7L4kh2rn_6zwMXydeKQrgBdO_phv4jhcVaMxwwLL2w0YqVlNAmuM8DYh9M_EI28DxKH9DxWYma-YxJju4ftuKt1YEklshyxXakrJYp44othfz_I2nxsktExyB44o6vtiOKSXcPfz9ji2wsLS7Y?width=634&height=192&cropmode=none" alt="获取手机端ip地址"></p>
+<hr>
+<p>若有，则键入如下命令</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb tcpip <span class="number">6666</span></span><br></pre></td></tr></table></figure>
+
+<p>6666代表的是你的手机要开放的端口号，可自由更改<br>原生安卓系统可以直接打开无线调试，但我手上的k30i 5G似乎屏蔽了无线调试功能<br>手机需要和电脑处在同一网络中  </p>
+<hr>
+<p>拔掉数据线，在powershell中输入  </p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb connect <span class="number">192.168</span>.<span class="number">1.17</span>:<span class="number">6666</span></span><br></pre></td></tr></table></figure>
+
+<p>出现如下图片即代表已经和手机建立连接<br><img src="https://dsm01pap001files.storage.live.com/y4mcKwGH_MwRJN3Xvnj52NUK4he-UEV0gFz0NSvmPyza5aklPVUbxm0ABMYjUH2bH_u6vdQuLoitm2TtYJVgGPuSitsTrgvqiQWf-K4BqPjXHkgtmHRC5HFnqTevOvs7SOumSbEVmGvfqv4Lhy8sLQQAj-HddKj3zDx9aDE3U4FUq7C4CHviU5yxymuWz5tqNr8?width=635&height=68&cropmode=none" alt="与手机成功建立连接"></p>
+<hr>
+<p>键入如下命令即可与手机端建立无线连接<br>（cmd下可以直接输入scrcpy）  </p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
+
+<p>与手机成功建立连接如图<br><img src="https://dsm01pap001files.storage.live.com/y4mSpjiaEGMQHgbwikDjqnH2r3ABGCVtUbCNjW8vwZbdo2GG1-2GlgpVmoNOjVQco_z6Ob_hpURfbJrdRmv9FXroK3gJld_fErrEFWG9PF4eO1hq89Bu3QWPudQWDxZydHN6h9Wat4c7jD68WQ-vxjW_Qgy1A_RDpoBTb-yq2fnYVNUp4eTakHe8JT6Th7r3HLs?width=950&height=129&cropmode=none" alt="与手机成功建立连接"></p>
+<hr>
+<p>整理命令如下</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br><span class="line">.\adb shell config</span><br><span class="line">.\adb tcpip 端口号</span><br><span class="line">.\adb connect 手机ip地址</span><br><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="补充操作-CMD"><a href="#补充操作-CMD" class="headerlink" title="补充操作 (CMD)"></a>补充操作 (CMD)</h1><blockquote>
+<p> 以下补充转自<a href="https://blog.csdn.net/aa464971/article/details/83349215">https://blog.csdn.net/aa464971/article/details/83349215</a></p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">#帮助</span><br><span class="line">scrcpy --<span class="built_in">help</span></span><br><span class="line"></span><br><span class="line">#设置码率（默认<span class="number">8</span>M）</span><br><span class="line">scrcpy -b <span class="number">8</span>M</span><br><span class="line"></span><br><span class="line">#限制投屏尺寸</span><br><span class="line">scrcpy -m <span class="number">1024</span></span><br><span class="line"></span><br><span class="line">#裁剪投屏屏幕(长:宽:偏移x:偏移y)</span><br><span class="line">scrcpy -c <span class="number">800</span>:<span class="number">800</span>:<span class="number">0</span>:<span class="number">0</span></span><br><span class="line"></span><br><span class="line">#投屏并录屏</span><br><span class="line">scrcpy -r file.mp4</span><br><span class="line"></span><br><span class="line">#不投屏只录屏</span><br><span class="line">scrcpy -Nr file.mp4</span><br><span class="line"></span><br><span class="line">#手指触摸的时候显示轨迹球</span><br><span class="line">scrcpy -t</span><br><span class="line"></span><br><span class="line">#一些快捷键</span><br><span class="line">切换全屏模式 Ctrl+f</span><br><span class="line">将窗口调整为<span class="number">1</span>：<span class="number">1</span>（完美像素） Ctrl+g</span><br><span class="line">调整窗口大小以删除黑色边框 Ctrl+x | 双击黑色背景</span><br><span class="line">设备HOME键 Ctrl+h | 鼠标中键</span><br><span class="line">设备BACK键 Ctrl+b | 鼠标右键</span><br><span class="line">设备任务管理键 Ctrl+s</span><br><span class="line">设备 菜单 键 Ctrl+m</span><br><span class="line">设备音量+键 Ctrl+↑</span><br><span class="line">设备音量-键 Ctrl+↓</span><br><span class="line">设备电源键 Ctrl+p</span><br><span class="line">点亮手机屏幕 鼠标右键</span><br><span class="line">复制内容到设备 Ctrl+v</span><br><span class="line">启用/禁用FPS计数器（stdout） Ctrl+i</span><br><span class="line">安装APK 将apk文件拖入投屏</span><br><span class="line">传输文件到设备 将文件拖入投屏（非apk）</span><br></pre></td></tr></table></figure>
+
+<p>部分内容来自<a href="https://www.jianshu.com/p/3f9116fb39ad">Ashin10</a>   </p>
+<p>scrcpy的github链：<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>  </p>
+]]></content>
+      <tags>
+        <tag>cmd</tag>
+        <tag>powershell</tag>
       </tags>
   </entry>
   <entry>
