@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>NoneBot v2安装帮助</title>
+    <url>/2022/08/24/bothelp/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>如果你想查看以前的东西，这里没有备份，只是为了让你能够快速开始NoneBot v2的使用。</p>
+</blockquote>
+<h1 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h1><ul>
+<li>一个能装上Python和nodejs的可用设备</li>
+<li>性能及其他组件需达到前置组件最低需求</li>
+</ul>
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><h2 id="Python及nodejs的安装"><a href="#Python及nodejs的安装" class="headerlink" title="Python及nodejs的安装"></a>Python及nodejs的安装</h2><blockquote>
+<p>其实在安装nodejs时会提示是否安装Python及VS预安装环境，这里为了完整讲述故从Python安装开始。</p>
+</blockquote>
+<p>前往Python官网<a href="https://www.python.org/downloads/">点击前往</a><br>选择你要安装的版本，这里不会教你如何安装Python，这里是NoneBot v2的使用教程，不会可以到各大引擎查找关键词条以获得详细方式。</p>
+<p>前往nodejs官网<a href="https://nodejs.org/zh-cn/download/">点击前往</a><br>选择你要安装的版本，同上。</p>
+<h2 id="NoneBot-v2的安装"><a href="#NoneBot-v2的安装" class="headerlink" title="NoneBot v2的安装"></a>NoneBot v2的安装</h2><blockquote>
+<p>前往<a href="https://v2.nonebot.dev/docs/next/start/installation">安装NoneBot2</a>，这里有作者的安装步骤。<br>  如果你有自己的Python环境管理工具，推荐在环境中创建。</p>
+</blockquote>
+<h3 id="脚手架安装"><a href="#脚手架安装" class="headerlink" title="脚手架安装"></a>脚手架安装</h3><p>通过pip及其他包管理工具安装nb-cli</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">pip install nb-cli</span><br></pre></td></tr></table></figure>
+<h3 id="从GitHub安装"><a href="#从GitHub安装" class="headerlink" title="从GitHub安装"></a>从GitHub安装</h3><p>前往<a href="https://github.com/nonebot/nonebot2">NoneBot2的GitHub仓库</a>，直接clone。<br>或者如下方式<br>git clone <a href="https://github.com/nonebot/nonebot2.git">https://github.com/nonebot/nonebot2.git</a><br>cd nonebot2<br>pip install<br>poetry install –no-dev</p>
+<h2 id="安装cqhttp"><a href="#安装cqhttp" class="headerlink" title="安装cqhttp"></a>安装cqhttp</h2><p>前往<a href="https://github.com/Mrs4s/go-cqhttp">go-cqhttp的仓库</a>下载适合自己的版本。</p>
+<h2 id="安装附属"><a href="#安装附属" class="headerlink" title="安装附属"></a>安装附属</h2><blockquote>
+<p>如果你想偷懒就可以每个驱动器都安装上（:<br>前往<a href="https://v2.nonebot.dev/store">商店</a>，选择你要安装的驱动器&#x2F;适配器&#x2F;插件，或者可以直接前往别人已经开发好的机器人的代码仓库clone他们的开发成果。</p>
+</blockquote>
+<h1 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h1><h2 id="设置cqhttp"><a href="#设置cqhttp" class="headerlink" title="设置cqhttp"></a>设置cqhttp</h2><p>启动cqhttp，这里我们只选择反向代理即可，会创建几个文件，找到“config.yml”，键入你的QQ账号，保存并再通过程序推荐的方式启动go-cqhttp，按照方式完成对QQ账号的验证即可，如果被QQ账号风控，让其挂3-5天即可解除。让其在机器人运行时保持运行，以此收发消息。</p>
+<h2 id="启动机器人"><a href="#启动机器人" class="headerlink" title="启动机器人"></a>启动机器人</h2><h3 id="空机器人实例"><a href="#空机器人实例" class="headerlink" title="空机器人实例"></a>空机器人实例</h3><p>在空文件夹下，打开cmd输入nb create来创建你的第一个机器人实例。<br>回车选中你要使用的适配器及插件目录，这样你就创建好了你的第一个机器人实例。<br>在当前文件夹下再次输入nb run来启动机器人</p>
+<h3 id="已打包好的机器人"><a href="#已打包好的机器人" class="headerlink" title="已打包好的机器人"></a>已打包好的机器人</h3><p>在clone后的目录下，打开cmd输入nb run即可运行机器人初步启动。<br>如果作者有其他关于插件的要求，按照提示即可完成。</p>
+<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p>恭喜你，你已经完成对于一个0编程基础机器人部署使用。</p>
+]]></content>
+      <tags>
+        <tag>NoneBot v2</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Collection</title>
     <url>/2021/09/23/collect/</url>
     <content><![CDATA[<blockquote>
@@ -672,41 +707,6 @@
 ]]></content>
       <tags>
         <tag>collect</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NoneBot v2安装帮助</title>
-    <url>/2022/08/24/bothelp/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>如果你想查看以前的东西，这里没有备份，只是为了让你能够快速开始NoneBot v2的使用。</p>
-</blockquote>
-<h1 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h1><ul>
-<li>一个能装上Python和nodejs的可用设备</li>
-<li>性能及其他组件需达到前置组件最低需求</li>
-</ul>
-<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><h2 id="Python及nodejs的安装"><a href="#Python及nodejs的安装" class="headerlink" title="Python及nodejs的安装"></a>Python及nodejs的安装</h2><blockquote>
-<p>其实在安装nodejs时会提示是否安装Python及VS预安装环境，这里为了完整讲述故从Python安装开始。</p>
-</blockquote>
-<p>前往Python官网<a href="https://www.python.org/downloads/">点击前往</a><br>选择你要安装的版本，这里不会教你如何安装Python，这里是NoneBot v2的使用教程，不会可以到各大引擎查找关键词条以获得详细方式。</p>
-<p>前往nodejs官网<a href="https://nodejs.org/zh-cn/download/">点击前往</a><br>选择你要安装的版本，同上。</p>
-<h2 id="NoneBot-v2的安装"><a href="#NoneBot-v2的安装" class="headerlink" title="NoneBot v2的安装"></a>NoneBot v2的安装</h2><blockquote>
-<p>前往<a href="https://v2.nonebot.dev/docs/next/start/installation">安装NoneBot2</a>，这里有作者的安装步骤。<br>  如果你有自己的Python环境管理工具，推荐在环境中创建。</p>
-</blockquote>
-<h3 id="脚手架安装"><a href="#脚手架安装" class="headerlink" title="脚手架安装"></a>脚手架安装</h3><p>通过pip及其他包管理工具安装nb-cli</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">pip install nb-cli</span><br></pre></td></tr></table></figure>
-<h3 id="从GitHub安装"><a href="#从GitHub安装" class="headerlink" title="从GitHub安装"></a>从GitHub安装</h3><p>前往<a href="https://github.com/nonebot/nonebot2">NoneBot2的GitHub仓库</a>，直接clone。<br>或者如下方式<br>git clone <a href="https://github.com/nonebot/nonebot2.git">https://github.com/nonebot/nonebot2.git</a><br>cd nonebot2<br>pip install<br>poetry install –no-dev</p>
-<h2 id="安装cqhttp"><a href="#安装cqhttp" class="headerlink" title="安装cqhttp"></a>安装cqhttp</h2><p>前往<a href="https://github.com/Mrs4s/go-cqhttp">go-cqhttp的仓库</a>下载适合自己的版本。</p>
-<h2 id="安装附属"><a href="#安装附属" class="headerlink" title="安装附属"></a>安装附属</h2><blockquote>
-<p>如果你想偷懒就可以每个驱动器都安装上（:<br>前往<a href="https://v2.nonebot.dev/store">商店</a>，选择你要安装的驱动器&#x2F;适配器&#x2F;插件，或者可以直接前往别人已经开发好的机器人的代码仓库clone他们的开发成果。</p>
-</blockquote>
-<h1 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h1><h2 id="设置cqhttp"><a href="#设置cqhttp" class="headerlink" title="设置cqhttp"></a>设置cqhttp</h2><p>启动cqhttp，这里我们只选择反向代理即可，会创建几个文件，找到“config.yml”，键入你的QQ账号，保存并再通过程序推荐的方式启动go-cqhttp，按照方式完成对QQ账号的验证即可，如果被QQ账号风控，让其挂3-5天即可解除。让其在机器人运行时保持运行，以此收发消息。</p>
-<h2 id="启动机器人"><a href="#启动机器人" class="headerlink" title="启动机器人"></a>启动机器人</h2><h3 id="空机器人实例"><a href="#空机器人实例" class="headerlink" title="空机器人实例"></a>空机器人实例</h3><p>在空文件夹下，打开cmd输入nb create来创建你的第一个机器人实例。<br>回车选中你要使用的适配器及插件目录，这样你就创建好了你的第一个机器人实例。<br>在当前文件夹下再次输入nb run来启动机器人</p>
-<h3 id="已打包好的机器人"><a href="#已打包好的机器人" class="headerlink" title="已打包好的机器人"></a>已打包好的机器人</h3><p>在clone后的目录下，打开cmd输入nb run即可运行机器人初步启动。<br>如果作者有其他关于插件的要求，按照提示即可完成。</p>
-<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p>恭喜你，你已经完成对于一个0编程基础机器人部署使用。</p>
-]]></content>
-      <tags>
-        <tag>NoneBot v2</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
