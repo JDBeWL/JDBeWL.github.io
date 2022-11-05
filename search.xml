@@ -36,85 +36,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一个好用的手机投影电脑的软件</title>
-    <url>/2021/09/23/onesoftctctp/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<h2 id="桌面端环境"><a href="#桌面端环境" class="headerlink" title="桌面端环境"></a>桌面端环境</h2><p>Windows、Linux、MacOS  </p>
-</blockquote>
-<h2 id="使用scrcpy的优点"><a href="#使用scrcpy的优点" class="headerlink" title="使用scrcpy的优点"></a>使用scrcpy的优点</h2><p>   画面（1920×1080或以上）<br>   低延迟（35-70ms）<br>   启动迅速（&lt;1秒显示第一张图像）<br>   非依赖性（设备上未安装任何东西）<br>   设备要求：Android 5.0以上  </p>
-<h1 id="如何使用scrcpy"><a href="#如何使用scrcpy" class="headerlink" title="如何使用scrcpy"></a>如何使用scrcpy</h1><blockquote>
-<p> 手机端开启adb<br> PC端下载scrcpy  </p>
-</blockquote>
-<h2 id="如何打开adb调试"><a href="#如何打开adb调试" class="headerlink" title="如何打开adb调试"></a>如何打开adb调试</h2><p>（若已经打开可以跳过这一步）  </p>
-<p>以MIUI 12.5为例  </p>
-<ul>
-<li><strong>打开开发者模式</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4myFf8r4Re-kRFAxcEGnqa2XGHrHGcWkJRZOyN49QxGZKM1ffZtDChMTCj-7KBZM5EFBjl_Qt2SSSRcf_ahZSxodwHViA3uGWUJkrGX6L-UqH5D5O_tIEymFHFPdMLjv2TG-OSZT-6a1lsBW4yJOs49cTfy980gvxLTn-LNHaqL6BbXthR8b7_ON1ebNln2O_v?width=461&height=1024&cropmode=none" alt="打开开发者模式"></p>
-<hr>
-<ul>
-<li><strong>进入开发者模式</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mjJcXGyOhmguLn9Ojnd-kdUHyESb17zQiSpViWiupyIJz8s_4H3XSinKOKAjvbGYbyDoNq_MQlPDHzpZF2uC5svjmbib0cYZ7wiXRIeb6i_tuh7XiqG7gRedEarBVpgifEgcJVZBXhFfIi0Y1Mz_Gwm2fP4FvMJNnd1rguZfq8m-O_XgApM5or0LMDLq_BwpS?width=461&height=1024&cropmode=none" alt="进入开发者模式"></p>
-<hr>
-<ul>
-<li><strong>打开ADB调试</strong></li>
-</ul>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mfHmYJswvkqMve0gTxpJX6spJqNVafq4SozGCnfPGX0xaJ7kr37T7aOvTl215MvBra8jp3R92UyXDzTN0iXDhCaVw5uBjlYtGxK0cB1nDz0Vv0e-7syK19z3UfUw63yXbaxPQcn-x7qMD9fjuebCUWdGlXn0l6z4EXUHgwyMKg1UdjxY5fol2sB3mdOeDg7pn?width=461&height=1024&cropmode=none" alt="打开ADB调试"></p>
-<hr>
-<h2 id="连接电脑"><a href="#连接电脑" class="headerlink" title="连接电脑"></a>连接电脑</h2><blockquote>
-<p> <strong>同意ADB调试</strong></p>
-</blockquote>
-<p><img src="https://dsm01pap001files.storage.live.com/y4mMgB1U7kI4l_GY-GrPA-ISyeX9NZpQWEh-Zspp6AuqdoRMkH5Vd7KFsqX8jhIPflS9cct1aMqYlWVWtnJAjuz8KRKNMuPoDQxqo0XDFDtPB_iSe0U0PtBky6zMUvbk5vS3aFmSsJP0o-q-dbJMzNDa8tfYLLBfsGKlywv-fwgZStlqxnDDnmzmSKrKpRo3FHZ?width=1080&height=790&cropmode=none" alt="同意ADB调试"> </p>
-<hr>
-<h3 id="有线连接"><a href="#有线连接" class="headerlink" title="有线连接"></a><strong>有线连接</strong></h3><p>直接运行scrcpy-console.bat即可通过有线方式连接</p>
-<hr>
-<h3 id="无线连接"><a href="#无线连接" class="headerlink" title="无线连接"></a><strong>无线连接</strong></h3><blockquote>
-<p> 可使用powershell和cmd进行命令输入<br> 此处仅展示powershell，命令基本一致（cmd下不输入 .\adb ，直接输入 adb 即可执行命令）  </p>
-</blockquote>
-<hr>
-<p>输入此查看你的设备是否在线</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br></pre></td></tr></table></figure>
-
-<p>如果在线，则应会显示如下图类似的文字<br><img src="https://dsm01pap001files.storage.live.com/y4mvJ8fiNtV3Shi8uR4LVruhCg-JBKjX8Iwr7LmHNVO8UpuJSBVqBJpYLzT7FHeDt5rZSKqv8OMq_O5TCg_mGD3Mpcc1VmDpVzam_s4LO-V1epupolPLJfd1ZoF5vsdqu0SvX5gjRLRDj6JO6kM87EKkWE645JsQpjJEHB9O12MTckyRhq52YYV_EZjOco8scG7?width=586&height=91&cropmode=none" alt="设备在线"></p>
-<hr>
-<p>确认设备在线后输入以下命令获取手机ip地址</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb shell config </span><br></pre></td></tr></table></figure>
-
-<p>应有如下显示<br><img src="https://dsm01pap001files.storage.live.com/y4mE__Y6BQJPgLsANoYuayjl60M5Edi1ep59krBKCoSYFiZ5M7L4kh2rn_6zwMXydeKQrgBdO_phv4jhcVaMxwwLL2w0YqVlNAmuM8DYh9M_EI28DxKH9DxWYma-YxJju4ftuKt1YEklshyxXakrJYp44othfz_I2nxsktExyB44o6vtiOKSXcPfz9ji2wsLS7Y?width=634&height=192&cropmode=none" alt="获取手机端ip地址"></p>
-<hr>
-<p>若有，则键入如下命令</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb tcpip <span class="number">6666</span></span><br></pre></td></tr></table></figure>
-
-<p>6666代表的是你的手机要开放的端口号，可自由更改<br>原生安卓系统可以直接打开无线调试，但我手上的k30i 5G似乎屏蔽了无线调试功能<br>手机需要和电脑处在同一网络中  </p>
-<hr>
-<p>拔掉数据线，在powershell中输入  </p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb connect <span class="number">192.168</span>.<span class="number">1.17</span>:<span class="number">6666</span></span><br></pre></td></tr></table></figure>
-
-<p>出现如下图片即代表已经和手机建立连接<br><img src="https://dsm01pap001files.storage.live.com/y4mcKwGH_MwRJN3Xvnj52NUK4he-UEV0gFz0NSvmPyza5aklPVUbxm0ABMYjUH2bH_u6vdQuLoitm2TtYJVgGPuSitsTrgvqiQWf-K4BqPjXHkgtmHRC5HFnqTevOvs7SOumSbEVmGvfqv4Lhy8sLQQAj-HddKj3zDx9aDE3U4FUq7C4CHviU5yxymuWz5tqNr8?width=635&height=68&cropmode=none" alt="与手机成功建立连接"></p>
-<hr>
-<p>键入如下命令即可与手机端建立无线连接<br>（cmd下可以直接输入scrcpy）  </p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
-
-<p>与手机成功建立连接如图<br><img src="https://dsm01pap001files.storage.live.com/y4mSpjiaEGMQHgbwikDjqnH2r3ABGCVtUbCNjW8vwZbdo2GG1-2GlgpVmoNOjVQco_z6Ob_hpURfbJrdRmv9FXroK3gJld_fErrEFWG9PF4eO1hq89Bu3QWPudQWDxZydHN6h9Wat4c7jD68WQ-vxjW_Qgy1A_RDpoBTb-yq2fnYVNUp4eTakHe8JT6Th7r3HLs?width=950&height=129&cropmode=none" alt="与手机成功建立连接"></p>
-<hr>
-<p>整理命令如下</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br><span class="line">.\adb shell config</span><br><span class="line">.\adb tcpip 端口号</span><br><span class="line">.\adb connect 手机ip地址</span><br><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="补充操作-CMD"><a href="#补充操作-CMD" class="headerlink" title="补充操作 (CMD)"></a>补充操作 (CMD)</h1><blockquote>
-<p> 以下补充转自<a href="https://blog.csdn.net/aa464971/article/details/83349215">https://blog.csdn.net/aa464971/article/details/83349215</a></p>
-</blockquote>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">#帮助</span><br><span class="line">scrcpy --<span class="built_in">help</span></span><br><span class="line"></span><br><span class="line">#设置码率（默认<span class="number">8</span>M）</span><br><span class="line">scrcpy -b <span class="number">8</span>M</span><br><span class="line"></span><br><span class="line">#限制投屏尺寸</span><br><span class="line">scrcpy -m <span class="number">1024</span></span><br><span class="line"></span><br><span class="line">#裁剪投屏屏幕(长:宽:偏移x:偏移y)</span><br><span class="line">scrcpy -c <span class="number">800</span>:<span class="number">800</span>:<span class="number">0</span>:<span class="number">0</span></span><br><span class="line"></span><br><span class="line">#投屏并录屏</span><br><span class="line">scrcpy -r file.mp4</span><br><span class="line"></span><br><span class="line">#不投屏只录屏</span><br><span class="line">scrcpy -Nr file.mp4</span><br><span class="line"></span><br><span class="line">#手指触摸的时候显示轨迹球</span><br><span class="line">scrcpy -t</span><br><span class="line"></span><br><span class="line">#一些快捷键</span><br><span class="line">切换全屏模式 Ctrl+f</span><br><span class="line">将窗口调整为<span class="number">1</span>：<span class="number">1</span>（完美像素） Ctrl+g</span><br><span class="line">调整窗口大小以删除黑色边框 Ctrl+x | 双击黑色背景</span><br><span class="line">设备HOME键 Ctrl+h | 鼠标中键</span><br><span class="line">设备BACK键 Ctrl+b | 鼠标右键</span><br><span class="line">设备任务管理键 Ctrl+s</span><br><span class="line">设备 菜单 键 Ctrl+m</span><br><span class="line">设备音量+键 Ctrl+↑</span><br><span class="line">设备音量-键 Ctrl+↓</span><br><span class="line">设备电源键 Ctrl+p</span><br><span class="line">点亮手机屏幕 鼠标右键</span><br><span class="line">复制内容到设备 Ctrl+v</span><br><span class="line">启用/禁用FPS计数器（stdout） Ctrl+i</span><br><span class="line">安装APK 将apk文件拖入投屏</span><br><span class="line">传输文件到设备 将文件拖入投屏（非apk）</span><br></pre></td></tr></table></figure>
-
-<p>部分内容来自<a href="https://www.jianshu.com/p/3f9116fb39ad">Ashin10</a>   </p>
-<p>scrcpy的github链：<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>  </p>
-]]></content>
-      <tags>
-        <tag>cmd</tag>
-        <tag>powershell</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Collection</title>
     <url>/2021/09/23/collect/</url>
     <content><![CDATA[<blockquote>
@@ -786,6 +707,85 @@
 ]]></content>
       <tags>
         <tag>collect</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一个好用的手机投影电脑的软件</title>
+    <url>/2021/09/23/onesoftctctp/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<h2 id="桌面端环境"><a href="#桌面端环境" class="headerlink" title="桌面端环境"></a>桌面端环境</h2><p>Windows、Linux、MacOS  </p>
+</blockquote>
+<h2 id="使用scrcpy的优点"><a href="#使用scrcpy的优点" class="headerlink" title="使用scrcpy的优点"></a>使用scrcpy的优点</h2><p>   画面（1920×1080或以上）<br>   低延迟（35-70ms）<br>   启动迅速（&lt;1秒显示第一张图像）<br>   非依赖性（设备上未安装任何东西）<br>   设备要求：Android 5.0以上  </p>
+<h1 id="如何使用scrcpy"><a href="#如何使用scrcpy" class="headerlink" title="如何使用scrcpy"></a>如何使用scrcpy</h1><blockquote>
+<p> 手机端开启adb<br> PC端下载scrcpy  </p>
+</blockquote>
+<h2 id="如何打开adb调试"><a href="#如何打开adb调试" class="headerlink" title="如何打开adb调试"></a>如何打开adb调试</h2><p>（若已经打开可以跳过这一步）  </p>
+<p>以MIUI 12.5为例  </p>
+<ul>
+<li><strong>打开开发者模式</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4myFf8r4Re-kRFAxcEGnqa2XGHrHGcWkJRZOyN49QxGZKM1ffZtDChMTCj-7KBZM5EFBjl_Qt2SSSRcf_ahZSxodwHViA3uGWUJkrGX6L-UqH5D5O_tIEymFHFPdMLjv2TG-OSZT-6a1lsBW4yJOs49cTfy980gvxLTn-LNHaqL6BbXthR8b7_ON1ebNln2O_v?width=461&height=1024&cropmode=none" alt="打开开发者模式"></p>
+<hr>
+<ul>
+<li><strong>进入开发者模式</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mjJcXGyOhmguLn9Ojnd-kdUHyESb17zQiSpViWiupyIJz8s_4H3XSinKOKAjvbGYbyDoNq_MQlPDHzpZF2uC5svjmbib0cYZ7wiXRIeb6i_tuh7XiqG7gRedEarBVpgifEgcJVZBXhFfIi0Y1Mz_Gwm2fP4FvMJNnd1rguZfq8m-O_XgApM5or0LMDLq_BwpS?width=461&height=1024&cropmode=none" alt="进入开发者模式"></p>
+<hr>
+<ul>
+<li><strong>打开ADB调试</strong></li>
+</ul>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mfHmYJswvkqMve0gTxpJX6spJqNVafq4SozGCnfPGX0xaJ7kr37T7aOvTl215MvBra8jp3R92UyXDzTN0iXDhCaVw5uBjlYtGxK0cB1nDz0Vv0e-7syK19z3UfUw63yXbaxPQcn-x7qMD9fjuebCUWdGlXn0l6z4EXUHgwyMKg1UdjxY5fol2sB3mdOeDg7pn?width=461&height=1024&cropmode=none" alt="打开ADB调试"></p>
+<hr>
+<h2 id="连接电脑"><a href="#连接电脑" class="headerlink" title="连接电脑"></a>连接电脑</h2><blockquote>
+<p> <strong>同意ADB调试</strong></p>
+</blockquote>
+<p><img src="https://dsm01pap001files.storage.live.com/y4mMgB1U7kI4l_GY-GrPA-ISyeX9NZpQWEh-Zspp6AuqdoRMkH5Vd7KFsqX8jhIPflS9cct1aMqYlWVWtnJAjuz8KRKNMuPoDQxqo0XDFDtPB_iSe0U0PtBky6zMUvbk5vS3aFmSsJP0o-q-dbJMzNDa8tfYLLBfsGKlywv-fwgZStlqxnDDnmzmSKrKpRo3FHZ?width=1080&height=790&cropmode=none" alt="同意ADB调试"> </p>
+<hr>
+<h3 id="有线连接"><a href="#有线连接" class="headerlink" title="有线连接"></a><strong>有线连接</strong></h3><p>直接运行scrcpy-console.bat即可通过有线方式连接</p>
+<hr>
+<h3 id="无线连接"><a href="#无线连接" class="headerlink" title="无线连接"></a><strong>无线连接</strong></h3><blockquote>
+<p> 可使用powershell和cmd进行命令输入<br> 此处仅展示powershell，命令基本一致（cmd下不输入 .\adb ，直接输入 adb 即可执行命令）  </p>
+</blockquote>
+<hr>
+<p>输入此查看你的设备是否在线</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br></pre></td></tr></table></figure>
+
+<p>如果在线，则应会显示如下图类似的文字<br><img src="https://dsm01pap001files.storage.live.com/y4mvJ8fiNtV3Shi8uR4LVruhCg-JBKjX8Iwr7LmHNVO8UpuJSBVqBJpYLzT7FHeDt5rZSKqv8OMq_O5TCg_mGD3Mpcc1VmDpVzam_s4LO-V1epupolPLJfd1ZoF5vsdqu0SvX5gjRLRDj6JO6kM87EKkWE645JsQpjJEHB9O12MTckyRhq52YYV_EZjOco8scG7?width=586&height=91&cropmode=none" alt="设备在线"></p>
+<hr>
+<p>确认设备在线后输入以下命令获取手机ip地址</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb shell config </span><br></pre></td></tr></table></figure>
+
+<p>应有如下显示<br><img src="https://dsm01pap001files.storage.live.com/y4mE__Y6BQJPgLsANoYuayjl60M5Edi1ep59krBKCoSYFiZ5M7L4kh2rn_6zwMXydeKQrgBdO_phv4jhcVaMxwwLL2w0YqVlNAmuM8DYh9M_EI28DxKH9DxWYma-YxJju4ftuKt1YEklshyxXakrJYp44othfz_I2nxsktExyB44o6vtiOKSXcPfz9ji2wsLS7Y?width=634&height=192&cropmode=none" alt="获取手机端ip地址"></p>
+<hr>
+<p>若有，则键入如下命令</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb tcpip <span class="number">6666</span></span><br></pre></td></tr></table></figure>
+
+<p>6666代表的是你的手机要开放的端口号，可自由更改<br>原生安卓系统可以直接打开无线调试，但我手上的k30i 5G似乎屏蔽了无线调试功能<br>手机需要和电脑处在同一网络中  </p>
+<hr>
+<p>拔掉数据线，在powershell中输入  </p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb connect <span class="number">192.168</span>.<span class="number">1.17</span>:<span class="number">6666</span></span><br></pre></td></tr></table></figure>
+
+<p>出现如下图片即代表已经和手机建立连接<br><img src="https://dsm01pap001files.storage.live.com/y4mcKwGH_MwRJN3Xvnj52NUK4he-UEV0gFz0NSvmPyza5aklPVUbxm0ABMYjUH2bH_u6vdQuLoitm2TtYJVgGPuSitsTrgvqiQWf-K4BqPjXHkgtmHRC5HFnqTevOvs7SOumSbEVmGvfqv4Lhy8sLQQAj-HddKj3zDx9aDE3U4FUq7C4CHviU5yxymuWz5tqNr8?width=635&height=68&cropmode=none" alt="与手机成功建立连接"></p>
+<hr>
+<p>键入如下命令即可与手机端建立无线连接<br>（cmd下可以直接输入scrcpy）  </p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
+
+<p>与手机成功建立连接如图<br><img src="https://dsm01pap001files.storage.live.com/y4mSpjiaEGMQHgbwikDjqnH2r3ABGCVtUbCNjW8vwZbdo2GG1-2GlgpVmoNOjVQco_z6Ob_hpURfbJrdRmv9FXroK3gJld_fErrEFWG9PF4eO1hq89Bu3QWPudQWDxZydHN6h9Wat4c7jD68WQ-vxjW_Qgy1A_RDpoBTb-yq2fnYVNUp4eTakHe8JT6Th7r3HLs?width=950&height=129&cropmode=none" alt="与手机成功建立连接"></p>
+<hr>
+<p>整理命令如下</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\adb devices</span><br><span class="line">.\adb shell config</span><br><span class="line">.\adb tcpip 端口号</span><br><span class="line">.\adb connect 手机ip地址</span><br><span class="line">.\scrcpy</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="补充操作-CMD"><a href="#补充操作-CMD" class="headerlink" title="补充操作 (CMD)"></a>补充操作 (CMD)</h1><blockquote>
+<p> 以下补充转自<a href="https://blog.csdn.net/aa464971/article/details/83349215">https://blog.csdn.net/aa464971/article/details/83349215</a></p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">#帮助</span><br><span class="line">scrcpy --<span class="built_in">help</span></span><br><span class="line"></span><br><span class="line">#设置码率（默认<span class="number">8</span>M）</span><br><span class="line">scrcpy -b <span class="number">8</span>M</span><br><span class="line"></span><br><span class="line">#限制投屏尺寸</span><br><span class="line">scrcpy -m <span class="number">1024</span></span><br><span class="line"></span><br><span class="line">#裁剪投屏屏幕(长:宽:偏移x:偏移y)</span><br><span class="line">scrcpy -c <span class="number">800</span>:<span class="number">800</span>:<span class="number">0</span>:<span class="number">0</span></span><br><span class="line"></span><br><span class="line">#投屏并录屏</span><br><span class="line">scrcpy -r file.mp4</span><br><span class="line"></span><br><span class="line">#不投屏只录屏</span><br><span class="line">scrcpy -Nr file.mp4</span><br><span class="line"></span><br><span class="line">#手指触摸的时候显示轨迹球</span><br><span class="line">scrcpy -t</span><br><span class="line"></span><br><span class="line">#一些快捷键</span><br><span class="line">切换全屏模式 Ctrl+f</span><br><span class="line">将窗口调整为<span class="number">1</span>：<span class="number">1</span>（完美像素） Ctrl+g</span><br><span class="line">调整窗口大小以删除黑色边框 Ctrl+x | 双击黑色背景</span><br><span class="line">设备HOME键 Ctrl+h | 鼠标中键</span><br><span class="line">设备BACK键 Ctrl+b | 鼠标右键</span><br><span class="line">设备任务管理键 Ctrl+s</span><br><span class="line">设备 菜单 键 Ctrl+m</span><br><span class="line">设备音量+键 Ctrl+↑</span><br><span class="line">设备音量-键 Ctrl+↓</span><br><span class="line">设备电源键 Ctrl+p</span><br><span class="line">点亮手机屏幕 鼠标右键</span><br><span class="line">复制内容到设备 Ctrl+v</span><br><span class="line">启用/禁用FPS计数器（stdout） Ctrl+i</span><br><span class="line">安装APK 将apk文件拖入投屏</span><br><span class="line">传输文件到设备 将文件拖入投屏（非apk）</span><br></pre></td></tr></table></figure>
+
+<p>部分内容来自<a href="https://www.jianshu.com/p/3f9116fb39ad">Ashin10</a>   </p>
+<p>scrcpy的github链：<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>  </p>
+]]></content>
+      <tags>
+        <tag>cmd</tag>
+        <tag>powershell</tag>
       </tags>
   </entry>
 </search>

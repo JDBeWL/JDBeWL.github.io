@@ -9,6 +9,6 @@ https://jdbewl.github.io/link/index.html
 https://jdbewl.github.io/
 https://jdbewl.github.io/tags/NoneBot-v2/
 https://jdbewl.github.io/tags/Python/
+https://jdbewl.github.io/tags/collect/
 https://jdbewl.github.io/tags/cmd/
 https://jdbewl.github.io/tags/powershell/
-https://jdbewl.github.io/tags/collect/
